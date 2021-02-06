@@ -1228,10 +1228,11 @@ p.infobox {
     background: linear-gradient( 0deg, rgba(7, 0, 59, 0.9), rgba(7, 0, 59, 0.7));
 }
 
-#outer-chat .button-cta {
+
+/* #outer-chat .button-cta {
     background-color: var(--main-color);
     color: #fff;
-}
+} */
 
 iframe.chat {
     flex-grow: 1;

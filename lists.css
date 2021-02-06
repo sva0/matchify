@@ -65,15 +65,20 @@ li:nth-last-child(-n+1) {
 }
 
 #ChatGameGroup {
-    padding-top: 0;
+    padding: 0;
+}
+
+#ChatGameGroup .card {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+#ChatGameGroup .card .title {
+    align-items: center;
 }
 
 #ChatGameGroup:hover {
     background: none;
-}
-
-#ChatGameGroup span {
-    color: var(--black-text);
 }
 
 .game-chat-img {
@@ -90,7 +95,8 @@ li:nth-last-child(-n+1) {
     align-items: center;
 }
 
-.list img {
+.list img,
+#outer-chat img {
     height: 52px;
     border-radius: 12px;
 }

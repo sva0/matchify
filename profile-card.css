@@ -41,7 +41,7 @@ img.lg-img {
     height: 16px;
 }
 
-.profile-card h4 {
+.profile-card #name {
     flex-grow: 0;
     display: flex;
     justify-content: space-between;
@@ -58,18 +58,22 @@ span i {
 }
 
 .details-row {
-    display: flex;
-    gap: 8px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
 }
 
 .details-row li {
     padding: 0;
     align-items: center;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto auto;
     gap: 16px;
     border: none;
-    width: 32%;
+    text-align: center;
+    background: none;
+}
+
+.details-row li:hover {
     background: none;
 }
 
