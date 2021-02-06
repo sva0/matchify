@@ -1,0 +1,247 @@
+body::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+body#profile-settings::-webkit-scrollbar,
+body#contacts::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--hr);
+    border-radius: var(--rad);
+    background: #EEE6FF;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--hr);
+    border-radius: var(--rad);
+}
+
+#explore {
+    background: none;
+}
+
+#gamelist {
+    background: none;
+    align-items: flex-start;
+}
+
+ul.list {
+    height: fit-content;
+    display: grid;
+    grid-template-columns: auto;
+    box-sizing: border-box;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    padding: 16px;
+    background: var(--second-bg);
+}
+
+#contacts li:nth-child(1) {
+    background: none;
+}
+
+#contacts li:nth-child(2) {
+    border-radius: 8px 8px 0 0;
+}
+
+li:nth-child(1) {
+    border-radius: 8px 8px 0 0;
+}
+
+li:nth-last-child(-n+1) {
+    border-radius: 0 0 8px 8px;
+}
+
+#ChatGameGroup {
+    padding-top: 0;
+}
+
+#ChatGameGroup:hover {
+    background: none;
+}
+
+#ChatGameGroup span {
+    color: var(--black-text);
+}
+
+.game-chat-img {
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+    border-radius: 12px;
+}
+
+.lists .title {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 56px auto;
+    align-items: center;
+}
+
+.list img {
+    height: 52px;
+    border-radius: 12px;
+}
+
+.communicators li {}
+
+#contacts .lists {
+    flex-direction: column;
+}
+
+#profile-settings .lists {
+    min-width: 343px;
+}
+
+#explore .card:hover,
+#gamelist .card:hover {
+    background-size: auto 105%;
+}
+
+#explore .title h4 {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.genre {
+    gap: 8px;
+    display: flex;
+    color: var(--black);
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+    width: -webkit-fill-available;
+}
+
+.genre h4,
+.genre i {
+    font-size: 12px;
+}
+
+
+/* .genre i {
+    display: flex;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    box-shadow: 0px 8px 16px rgba(22, 10, 66, 0.1);
+    border-radius: 8px;
+    height: 38px;
+    width: 38px;
+    align-items: center;
+    justify-content: center;
+} */
+
+.genre i {
+    color: var(--main-color)
+}
+
+li .title {
+    display: flex;
+    flex-direction: column;
+}
+
+li p {
+    flex-grow: 2;
+}
+
+li:hover {
+    background: #eae4f3;
+}
+
+.list-of-games {
+    display: grid;
+    grid-auto-flow: column;
+    height: 100%;
+    gap: 8px;
+}
+
+.switch {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2px;
+    position: relative;
+    width: 45px;
+    background: #03E6A1;
+    background: var(--main-color);
+    border-radius: 36px;
+    transition: .5s;
+}
+
+.switch .circle {
+    height: 22px;
+    background: #fff;
+    border-radius: 50%;
+    width: 22px;
+    display: block;
+    float: right;
+}
+
+.switch-off {
+    background: #FF6051 !important;
+    justify-content: flex-start !important;
+}
+
+#contacts {
+    padding: 0;
+}
+
+#contacts .card h4 {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.title-contacts-game {
+    flex-direction: row;
+    display: flex;
+    gap: 16px;
+    height: 48px;
+    position: relative;
+    padding: 8px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.title-contacts-game:before {
+    content: "";
+    background: url('images/valorant.jpg');
+    background-size: 100%;
+    background-position: center;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.title-contacts-game h4 {
+    flex-grow: 3;
+    align-self: center;
+    /* color: var(--paragraph); */
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.title-contacts-game .card {
+    flex-grow: 1;
+}
+
+.avatar-buttons {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 16px;
+    justify-self: center;
+}

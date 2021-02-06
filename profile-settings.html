@@ -1,0 +1,122 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/30cc98dcb5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lists.css">
+    <link rel="stylesheet" href="no-scrollbar.css">
+    <link rel="stylesheet" href="mobile.css">
+    <title>Matchify 2021</title>
+    <meta name="description" content="Matchify">
+    <meta name="author" content="sovadzn.com">
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+</head>
+
+<body id="profile-settings">
+    <label class="input-title" for="Nick"><i class="fas fa-camera"></i>Avatar</label>
+    <div class="avatar">
+        <img src="images/image-avatar.png" alt="">
+        <div class="avatar-buttons">
+            <a class="button-secondary" href="#"><img src="" alt=""><i class="fas fa-upload"></i> Upload</a>
+            <a class="button-delete" href="#"><img src="" alt=""><i class="far fa-trash-alt"></i>
+                <div class="text">delete</div>
+            </a>
+        </div>
+    </div>
+    <hr>
+    <label class="input-title" for="Nick"><i class="fas fa-user-tag"></i>Nickname</label>
+    <input placeholder="ex. Tom" value="sva" type="text" id="lname" name="lname">
+    <label class="input-title" for="Nick"><i class="fas fa-envelope"></i>E-mail</label>
+    <input type="text" value="krystian@contact.matchify.gg" placeholder="ex. email@gmail.com" id="lname" name="lname">
+    <div class="info-box">
+        <div class="title">
+            <h4><i class="far fa-lightbulb"></i> Verify your e-mail</h4>
+            <p class="infobox">E-mail is not yet verified! Click the link in the activation e-mail</p>
+        </div>
+        <a href="#" class="button"><i class="fas fa-envelope"></i> Send again</a>
+    </div>
+    <hr>
+    <div class="special-settings">
+
+        <label class="input-title" for="Nick"><i class="fas fa-key"></i>Password</label>
+        <input type="text" value="******************" " placeholder="Password " id="lname " name="lname ">
+        <label class="input-title " for="Nick "><i class="fas fa-key "></i>Password (repeat)</label>
+        <input type="text " value="****************** "" placeholder="Repeat" id="lname" name="lname">
+        <a href="#" class="button-secondary"><i class="fas fa-key"></i> Change password</a>
+    </div>
+
+    <hr>
+    <label class="input-title" for="Nick"><i class="fas fa-calendar-day"></i>Date of Birth</label>
+    <select id="gender" name="gender">
+        <option value="volvo">29 may 2021</option>
+        <option value="volvo">other</option>
+      </select>
+
+    <hr>
+    <label class="input-title" for="Nick"><i class="fas fa-genderless"></i>Gender</label>
+    <select id="gender" name="gender">
+        <option value="volvo">Male</option>
+        <option value="saab">Female</option>
+        <option value="fiat">Non-binary</option>
+      </select>
+    <hr>
+    <div class="special-settings">
+        <label class="input-title" for="Nick"><i class="fas fa-language"></i>Languages</label>
+
+        <p>We're going to show you others based on languages of your choice</p>
+        <select id="gender" name="gender">
+        <option value="volvo">Polish</option>
+        <option value="saab">Female</option>
+        <option value="fiat">Non-binary</option>
+      </select>
+    </div>
+    <hr>
+
+
+    <label class="input-title" for="Nick"><i class="fas fa-wifi"></i>Communicators</label>
+    <ul class="list communicators">
+        <li>
+            <p id="if-switch"><i class="fab fa-discord"></i> Discord</p>
+
+            <div class="switch switch-off" href="">
+                <div class="circle"></div>
+            </div>
+        </li>
+        <li>
+            <p id="if-switch"><i class="fab fa-facebook-messenger"></i> Messenger</p>
+
+            <div class="switch switch-off" href="">
+                <div class="circle"></div>
+            </div>
+        </li>
+        <li>
+            <p id="if-switch"><i class="fab fa-skype"></i> Skype</p>
+
+            <div class="switch" href="">
+                <div class="circle"></div>
+            </div>
+        </li>
+        <li>
+            <p id="if-switch"><i class="fab fa-teamspeak"></i> TeamSpeak</p>
+
+            <div class="switch" href="">
+                <div class="circle"></div>
+            </div>
+        </li>
+    </ul>
+    </div>
+    <hr>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.switch').click(function() {
+                $(this).toggleClass('switch-off');
+            });
+        });
+    </script>
+</body>

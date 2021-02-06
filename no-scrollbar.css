@@ -1,0 +1,10 @@
+body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+body#profile-settings::-webkit-scrollbar,
+body#contacts::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}

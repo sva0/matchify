@@ -1,0 +1,228 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@media (max-width: 500px) {
+    ul#menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        z-index: 10;
+    }
+    .search-bar {
+        display: none;
+        visibility: hidden;
+    }
+    #fullscreen {
+        display: none;
+    }
+    .explore,
+    .right {
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+    .explore .top,
+    .contact .top {
+        margin: 16px;
+    }
+    #chat-window,
+    #explore-list-main {
+        padding: 16px;
+        box-sizing: border-box;
+    }
+    .dark-bg-over {
+        background: #2D274380;
+        z-index: 10;
+        display: none;
+        width: 2000px;
+        height: 2000px;
+        position: fixed;
+    }
+    #settings-button-container {
+        margin: -16px;
+        padding: 16px;
+    }
+    .no-games-mobile {
+        height: 60%;
+        background-size: 700%;
+        background-position: -300px -500px;
+        background-position: -1100px -1100px;
+    }
+    .no-games-mobile .gradient#no-games {
+        height: 100%;
+    }
+    .text {
+        display: none;
+    }
+    .overlay-bg {
+        z-index: 12;
+    }
+    .button-delete i {
+        margin: 0;
+    }
+    #explore.card,
+    #dashboard.card {
+        min-height: 150px;
+    }
+    #show-chat-window {
+        z-index: 20;
+    }
+    #outer-chat {
+        margin: 0;
+        padding: 16px;
+        border-radius: 0;
+        height: 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    #outer-chat:before {
+        border-radius: 0;
+        margin: -16px;
+    }
+    .container {
+        height: calc(100% - 16px);
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .info-box {
+        grid-template-columns: auto;
+    }
+    hr.short {
+        width: 24px;
+        display: block;
+    }
+    iframe.chat {
+        width: 100%;
+    }
+    #desktop-title {
+        display: none;
+    }
+    .mobile {
+        -webkit-box-flex-grow: 2;
+        -ms-flex-grow: 2;
+        flex-grow: 2;
+        padding: 16px;
+    }
+    .dashboard,
+    .explore {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .gradient .dashboard iframe {
+        -webkit-box-flex-grow: 2;
+        -ms-flex-grow: 2;
+        flex-grow: 2;
+    }
+    .mobile {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .left {
+        margin: 0;
+    }
+    .right {
+        min-width: 100%;
+    }
+    .container-mobile {
+        width: 100%;
+        margin: 8px;
+    }
+    .inner-container {
+        padding: 16px;
+        z-index: 10;
+    }
+    .no-games {
+        height: 100%;
+        display: none;
+    }
+    iframe.profile-settings {
+        width: 100%;
+    }
+    #my-games {
+        display: none;
+    }
+    .explore {
+        gap: 0;
+    }
+    .contact {
+        width: 100%;
+        padding: 0px;
+        z-index: 8;
+        border-radius: 0;
+        gap: 0;
+    }
+    .loggedas {
+        display: none;
+    }
+    .explorerlist iframe {
+        height: 192px;
+    }
+    .mobile #my-games {
+        height: 100%;
+    }
+    .avatar-buttons {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .dashboard-list {
+        grid-auto-flow: row;
+    }
+    #gamelist .card {
+        width: auto;
+        background-size: 100%;
+        height: 180px;
+    }
+    #explore .card:hover,
+    #gamelist .card:hover {
+        background-size: 105%;
+    }
+    .genre {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        width: -webkit-fill-available;
+    }
+    #explore .card {
+        width: 120px;
+        background-size: auto 100%;
+    }
+    #explore .card:hover {
+        background-size: auto 105%;
+    }
+    #explore .gradient h4 {
+        font-size: 12px;
+    }
+    ul.explorerlist li {
+        border-radius: 8px;
+    }
+    #explore iframe {
+        height: 190px;
+    }
+    #explore .lists {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    #login {
+        background-size: 100%;
+    }
+    #login .clear-flex {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: calc(100% - 16px);
+    }
+}

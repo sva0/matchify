@@ -1,0 +1,146 @@
+body {
+    background: linear-gradient(0deg, rgba(45, 39, 67, 0.877), rgba(45, 39, 67, 0.918)), url('images/battlefield-v-700x394.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+}
+
+body {
+    border-radius: var(--rad);
+    background: #fff;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+#chat .title {
+    display: none;
+    flex-direction: row;
+    color: #fff;
+    padding: 32px;
+    gap: 24px;
+    height: fit-content;
+    width: -webkit-fill-available;
+    position: fixed;
+    align-items: center;
+    background: linear-gradient(180deg, #1C182C 0%, rgba(28, 24, 44, 0) 99%);
+}
+
+#chat {
+    display: flex;
+    flex-direction: column;
+    background: none;
+}
+
+.title span {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 10px;
+    color: var(--paragraph);
+    background: #fff;
+    width: fit-content;
+    padding: 4px 8px;
+    border-radius: var(--rad);
+    text-shadow: 0px 2px 0px #1C182C;
+}
+
+.title img {
+    height: 32px;
+}
+
+.who {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    gap: 4px;
+}
+
+.title h4 {
+    color: #fff
+}
+
+.chat-bubles {
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.msg {
+    max-width: 55%;
+    display: block;
+    font-size: 16px;
+    line-height: 140%;
+    padding: 16px;
+    border-radius: var(--rad);
+    align-self: flex-start;
+    background: var(--second-bg);
+    color: var(--black-text);
+}
+
+.my-msg {
+    align-self: flex-end;
+    background: var(--main-color);
+    color: #fff;
+}
+
+#contact-img {
+    margin-left: 40px;
+}
+
+#contact-img::before {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 0;
+    margin-top: -16px;
+    background-image: url('images/profiles/Rectangle 15.png');
+    border-radius: 8px;
+    background-size: auto 100%;
+    background-position: center;
+}
+
+.type-message {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: fit-content;
+    gap: 8px;
+    /* background: linear-gradient(0deg, #1C182C 0%, rgba(28, 24, 44, 0) 99%); */
+}
+
+.type-message input {
+    flex-grow: 2;
+}
+
+.type-message .img {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border-radius: var(--rad);
+    height: 16px;
+    width: 56px;
+    transition: .2s;
+}
+
+.img:hover {
+    background-color: var(--main-color);
+}
+
+@media (max-width: 2200px) {
+    body {
+        background-size: auto 100%;
+    }
+}
+
+@media (min-width: 550px) {
+    #chat .title {
+        display: none;
+    }
+}

@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/30cc98dcb5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lists.css">
+    <link rel="stylesheet" href="mobile.css">
+    <title>Matchify 2021</title>
+    <meta name="description" content="Matchify">
+    <meta name="author" content="sovadzn.com">
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+</head>
+
+<body id="profile-settings">
+    <div class="info-box">
+        <div class="title">
+            <h4><i class="far fa-lightbulb"></i> info</h4>
+            <p class="infobox">Each game has its unique swipe settings</p>
+        </div>
+    </div>
+    <hr>
+    <div class="special-settings is-visible">
+        <div class="title">
+            <label class="input-title" style="margin: 0;" for="Nick"><i class="fas fa-eye"></i>Show me at this game</label>
+            <div class="switch switch-off" href="">
+                <div class="circle"></div>
+            </div>
+        </div>
+
+
+        <div class="info-box warning">
+            <div class="title">
+                <h4><i class="fas fa-eye-slash"></i>you are not visible</h4>
+                <p>No one can see you at this game, and you cannot swipe here.</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+
+
+    <label class="input-title" for="Nick"><i class="fas fa-file-signature"></i>Profile description</label>
+    <textarea type="text" placeholder="description " id="lname " name="lname ">
+        </textarea>
+    <hr>
+    <label class="input-title " for="Nick "><i class="fas fa-gamepad"></i>My platforms</label>
+    <select id="gender " name="gender ">
+        <option value="volvo "><i class="fab fa-xbox"></i>Xbox 359</option>
+        <option value="volvo "><i class="fab fa-playstation"></i>Playstation 4.1</option>
+      </select>
+      <label class="input-title " for="Nick "><i class="fas fa-filter"></i>Filter by platforms</label>
+    <select id="gender " name="gender ">
+        <option value="volvo "><i class="fab fa-xbox"></i>Xbox 359</option>
+        <option value="volvo "><i class="fab fa-playstation"></i>Playstation 4.1</option>
+      </select>
+
+    <hr>
+    <label class="input-title " for="Nick "><i class="fas fa-globe-europe"></i>Region</label>
+    <select id="gender " name="gender ">
+        <option value="volvo ">Male</option>
+        <option value="saab ">Female</option>
+        <option value="fiat ">Non-binary</option>
+      </select>
+    <hr>
+
+    </div>
+
+    <script type="text/javascript ">
+        $(document).ready(function() {
+            $('.switch').click(function() {
+                $(this).toggleClass('switch-off');
+                $('.warning').slideToggle('fast');
+                $('.is-visible').toggleClass('is-visible-yes');
+
+            });
+        });
+    </script>
+</body>

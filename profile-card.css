@@ -1,0 +1,91 @@
+.swiping-outer-card {
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card {
+    height: 480px;
+    width: 343px;
+    background: #fff;
+    border-radius: 32px 32px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    box-sizing: border-box;
+    box-shadow: var(--box-shadow);
+}
+
+.profile-card::after {
+    content: '';
+    height: 180px;
+    width: 343px;
+    margin: -16px;
+    position: absolute;
+    border-radius: 16px;
+    /* background: linear-gradient(180deg, rgba(28, 24, 44, 0) 16.82%, #1C182C 100%), url('images/valorant.jpg'); */
+    background: url('images/valorant.jpg');
+    background-size: 100%;
+    background-position: center;
+    z-index: 1;
+}
+
+.profile-card img {
+    align-self: center;
+    z-index: 2;
+}
+
+img.lg-img {
+    height: 16px;
+}
+
+.profile-card h4 {
+    flex-grow: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+    align-items: center;
+}
+
+span i {
+    color: var(--main-color);
+}
+
+.profile-card span {
+    color: var(--paragraph)
+}
+
+.details-row {
+    display: flex;
+    gap: 8px;
+}
+
+.details-row li {
+    padding: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: none;
+    width: 32%;
+    background: none;
+}
+
+.details-box {
+    margin: -16px;
+    background: var(--second-bg);
+    flex-grow: 1;
+    margin-top: 0;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.details-box p {
+    color: var(--black);
+    font-weight: 600;
+}

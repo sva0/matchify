@@ -1,0 +1,432 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/30cc98dcb5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="profile-card.css">
+    <title>Matchify v3 / 2021 / svdzn</title>
+    <meta name="description" content="Matchify">
+    <meta name="author" content="sovadzn.com">
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+
+</head>
+
+
+
+<body class="main-bg">
+    <div class="search-bar light">
+        <div class="logo-top"><img src="images/logo-top.svg" alt=""></div>
+        <h4>Matchify.gg</h4>
+        <i style="margin-left: 32px;" class="fas fa-search"></i>
+        <input type="text" value="Search...">
+
+
+
+        <div class="loggedas"><a class="button-cta"><i class="fas fa-user-cog"></i></a>
+            <img src="images/img.png" alt="">
+        </div>
+    </div>
+
+    <!-- <div class="search-bar dark">
+        <div class="logo-top"><img src="images/logo-top.svg" alt=""></div>
+        <h4>Matchify.gg</h4>
+        <i style="margin-left: 32px;" class="fas fa-search"></i>
+        <input type="text" value="Search...">
+        <div class="loggedas">
+            <img src="images/img.png" alt="">
+        </div>
+
+        <a href="" class="button-cta"><i class="fas fa-user-cog"></i></a>
+    </div> -->
+
+
+    <div id="show-profile-settings" class="overlay-bg">
+        <div id="settings-profile" class="container container-mobile">
+            <div class="inner-container">
+
+                <div class="title">
+                    <a class="button-cta"><i class="fas fa-arrow-left"></i></a>
+                    <h4>Edit profile</h4>
+                    <a href="" class="button-cta"><i class="fas fa-stream"></i></a>
+                </div>
+                <iframe class="profile-settings" src="profile-settings.html"></iframe>
+                <div id="settings-button-container">
+                    <a class="button"><i class="fas fa-check"></i> Save changes</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="show-game-settings" class="overlay-bg">
+        <div id="settings-profile" class="container container-mobile">
+
+            <div class="inner-container">
+                <div class="title">
+                    <a class="button-cta"><i class="fas fa-arrow-left"></i></a>
+                    <div class="title-column">
+
+                        <h4>Game settings</h4>
+                        <span id="if-visible">Valorant</span>
+                    </div>
+                    <a href="" class="button-cta"><i class="fas fa-stream"></i></a>
+                </div>
+                <iframe class="profile-settings" src="game-settings.html"></iframe>
+
+                <div id="settings-button-container">
+                    <a href="#" class="button"><i class="fas fa-check"></i> Save changes</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="show-chat-window" class="overlay-bg">
+        <div id="outer-chat" class="container container-mobile">
+            <div class="card" id="valorant">
+                <div class="gradient">
+                    <div id="hide-chat" class="title">
+                        <a class="button-cta"><i class="fas fa-arrow-left"></i></a>
+                        <img src="images/profiles/Rectangle 15.png" height="48px" alt="">
+                        <div class="title-column">
+
+                            <h4>kx14321</h4>
+                            <span>Valorant</span>
+                        </div>
+
+                        <a href="" class="button-cta"><i class="fas fa-stream"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <iframe class="chat" src="chat.html"></iframe>
+            <div class="type-message">
+                <input type="text" placeholder="Type your message">
+                <div class="button" id="send-message">send <i class="fas fa-arrow-right"></i></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="under-search">
+        <div class="left">
+
+            <div class="dashboard mobile" id="dashboard-main">
+                <div class="top">
+                    <div class="title-column">
+                        <!-- <img src="images/h-w.svg" class="category-main" alt=""> -->
+                        <div class="inline">
+                            <img src="images/menu/dashboard.svg" alt="">
+                            <h2 id="goswipe">Dashboard</h2>
+                        </div>
+                        <p id="desktop-title">Games are sorted by your activity</p>
+                        <hr class="short">
+                    </div>
+                </div>
+                <div class="no-games-mobile">
+                    <div class="gradient" id="no-games">
+                        <div class="title-column">
+                            <h4>You don't have any games yet <i class="far fa-frown"></i></h4>
+                            <img src="images/no-games-asset.svg" alt="">
+                            <p id="toggle-dashboard"> Check<span><i class="fas fa-compass"></i> explore</span>, or find those you want using the<span><i class="fas fa-search"></i> search</span> bar. GL&HF
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <iframe id="my-games" src="gamelist.html" style="width:100%;border:none;overflow:hidden;"></iframe>
+
+            </div>
+
+            <div class="explore">
+                <div class="top">
+
+                    <div class="title-column">
+                        <div class="inline">
+                            <img src="images/menu/explore.svg" alt="">
+
+                            <h2>Explore</h2>
+                        </div>
+                        <p id="desktop-title">List of games grouped by genres, and sorted by their populatiry </p>
+                        <hr class="short">
+                    </div>
+                    <a id="fullscreen" class="button-cta button-secondary">
+                        <i class="fas fa-expand"></i> see explore fullsceen
+                    </a>
+                </div>
+                <iframe src="explore-outside.html" id="explore-list-main" style="width:100%;border:none;overflow:hidden;flex: 2;"></iframe>
+            </div>
+
+
+            <div id="swiping">
+                <div class="title">
+                    <a class="button-cta exit-swipe"><i class="fas fa-arrow-left"></i></a>
+                    <div class="title-column">
+
+                        <h4>Swipe</h4>
+                        <span>Valorant</span>
+                    </div>
+                    <a id="go-game-settings" class="button-cta"><i class="fas fa-stream"></i></a>
+                </div>
+                <div class="swiping-outer-card">
+                    <div class="profile-card">
+                        <img src="images/swipe-card-img.png" alt="">
+                        <h4>sva<img class="lg-img" src="images/pl.svg" alt=""></h4>
+
+
+                        <ul class="details-row">
+                            <li>
+                                <span>communicator(s)</span>
+                                <h4><i class="fab fa-skype"></i> <i class="fab fa-discord"></i></h4>
+                            </li>
+                            <li>
+                                <span>platforms(s)</span>
+                                <h4><i class="fab fa-playstation"></i></h4>
+                            </li>
+                            <li>
+                                <span>age</span>
+                                <h4>22</h4>
+                            </li>
+
+                        </ul>
+
+                        <div class="details-box">
+                            <span><i class="fas fa-quote-right"></i> profile description</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="vote-bar">
+                    <div class="vote voteNo"><i class="fas fa-times"></i></div>
+                    <div class="vote voteYes"><i class="fas fa-check"></i></div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="right">
+            <div class="contact">
+
+                <div class="top">
+                    <div class="title-column">
+
+                        <!-- <img src="images/c-w.svg" class="category-main" alt=""> -->
+                        <div class="inline">
+                            <img src="images/menu/contacts.svg" alt="">
+                            <h2 class="chat-with">Contacts</h2>
+                        </div>
+                        <p id="desktop-title">List of your contacts</p>
+                        <hr class="short">
+                    </div>
+
+                    <!-- <a class="button search" href="#"><img src="images/search.svg" alt=""> search </a> -->
+
+                </div>
+
+                <iframe id="chat-window" src="contacts.html" style="height:100%;width:100%;border:none;overflow:hidden;"></iframe>
+
+            </div>
+
+        </div>
+
+        <ul id="menu">
+            <li id="go-dashboard">
+                <img src="images/home.svg" class="menu-option" alt="">
+            </li>
+            <li id="go-explore">
+                <img src="images/explore-menu.svg" class="menu-option" alt="">
+            </li>
+            <li id="go-contact">
+                <img src="images/contacts-menu.svg" class="menu-option" alt="">
+            </li>
+            <li>
+                <img src="images/img.png" id="profile-menu-pic" class="menu-option" alt="">
+            </li>
+        </ul>
+
+
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.search').on('click', function() {
+                $(this).toggleClass('search');
+                $(this).toggleClass('search-active');
+                $('.dark-bg-over').toggle();
+            });
+        });
+
+
+
+
+        /* FULLSCREEN START */
+
+        $(document).ready(function() {
+
+            $('#fullscreen').click(function() {
+
+                $(this).toggleClass('button-delete');
+
+                if ($('.no-games').is(':visible')) {
+                    $('.no-games').hide();
+                    $('#dashboard-main').show();
+
+                    $('#dashboard-main, .right').toggle('fast');
+
+                    $(this).html(String('<i class="fas fa-compress"></i> exit fullscreen'));
+                } else {
+                    if ($('.right').is(':hidden')) {
+                        $(this).html(String('<i class="fas fa-expand"></i> see explore fullsceen'));
+                        $('#dashboard-main, .right').show('fast');
+                        $('#dashboard-main, .right').css('display', 'flex');
+                    } else {
+                        $('#dashboard-main, .right').hide('fast');
+                        $(this).html(String('<i class="fas fa-compress"></i> exit fullscreen'));
+                    }
+                }
+
+
+
+            });
+        });
+
+        /* FULLSCREEN END */
+
+
+        /* GO SWIPE */
+
+
+        $(document).ready(function() {
+            $('#goswipe').click(function() {
+                $('#dashboard-main, .explore, .light').hide('fast');
+                $('#swiping, .dark').css('display', 'flex');
+                $('.swipe-big').show('fast');
+                $('body').toggleClass('swipe-bg');
+                $('body').toggleClass('main-bg');
+            });
+        });
+
+
+        $(document).ready(function() {
+            $('.exit-swipe').click(function() {
+                $('#swiping').hide('fast');
+                $('#dashboard-main, .explore, .light').css('display', 'flex');
+                $('.swipe-big, .dark').hide('fast');
+                $('body').toggleClass('swipe-bg');
+                $('body').toggleClass('main-bg');
+            });
+        });
+
+
+
+        /* END SWIPE */
+
+
+
+
+        $(document).ready(function() {
+            $('#switch').click(function() {
+                $(this).toggleClass('.switch-off');
+            });
+        });
+
+
+
+
+        /* MENU START */
+
+        $(document).ready(function() {
+            $('#go-dashboard').click(function() {
+                $('.right, .explore').hide('fast');
+                $('.left').show('fast');
+                $('#dashboard-main').show('fast');
+                $('#dashboard-main').css('display', 'flex');
+            });
+        });
+
+        $(document).ready(function() {
+            $('#go-explore').click(function() {
+                $('.right, #dashboard-main').hide('fast');
+                $('.left').show('fast');
+                $('.explore').show('fast');
+                $('.explore').css('display', 'flex');
+            });
+        });
+
+        $(document).ready(function() {
+            $('#go-contact').click(function() {
+                $('.explore, .left, #dashboard-main').hide('fast');
+                $('.right').show('fast');
+                $('.right').css('display', 'flex');
+                $('.right').css('z-index', '10');
+            });
+        });
+
+        /* MENU END */
+
+        $(document).ready(function() {
+            $('.chat-with').click(function() {
+                if ($('#show-chat-window').is(':hidden')) {
+                    $('#show-chat-window').css('display', 'flex');
+                    $('#chat').show();
+                } else {
+                    $('.overlay-bg').hide('fast');
+                }
+            });
+        });
+
+        $(document).ready(function() {
+            $('#hide-cha, #show-chat-window').click(function() {
+                $('.overlay-bg').hide('fast');
+            });
+        });
+
+
+
+        $(document).ready(function() {
+            $('.no-games-mobile').click(function() {
+                $(this).hide('fast');
+                $('#my-games').css('display', 'flex');
+            });
+        });
+
+        $(document).ready(function() {
+            $('.loggedas, #show-profile-settings, #profile-menu-pic').click(function() {
+                if ($('#show-profile-settings').is(':hidden')) {
+                    $('#show-profile-settings').css('display', 'flex');
+                } else {
+                    $('#show-profile-settings').hide('fast');
+                }
+            });
+        });
+
+        $(document).ready(function() {
+            $('#show-game-settings, #go-game-settings').click(function() {
+                if ($('#show-game-settings').is(':hidden')) {
+                    $('#show-game-settings').css('display', 'flex');
+                } else {
+                    $('#show-game-settings').hide('fast');
+                }
+            });
+        });
+
+        $(document).ready(function() {
+            $('#toggle-dashboard').click(function() {
+                $('.dashboard').css('display', 'flex');
+                $('.no-games').hide('slow');
+            });
+        });
+    </script>
+</body>
+
+</html>
