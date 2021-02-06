@@ -220,12 +220,23 @@
     #login {
         background-size: 100%;
         display: grid;
-        gap: 16px;
-        grid-template-columns: auto;
+        height: fit-content;
+        padding: 16px;
     }
     #login .clear-flex {
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
-        width: calc(100% - 16px);
+        width: 100%;
+    }
+    #login::before {
+        width: calc(100% + 64px);
+        margin: -16px;
+        filter: none;
+    }
+    .SameHeightLogin {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 16px;
+        margin: auto;
     }
 }
