@@ -288,7 +288,7 @@
                     if ($('.right').is(':hidden')) {
                         $(this).html(String('<i class="fas fa-expand"></i> see explore fullsceen'));
                         $('#dashboard-main, .right').show('fast');
-                        $('#dashboard-main, .right').css('display', 'grid');
+                        $('#dashboard-main, .right').css('display', 'flex');
                     } else {
                         $('#dashboard-main, .right').hide('fast');
                         $(this).html(String('<i class="fas fa-compress"></i> exit fullscreen'));
@@ -309,7 +309,7 @@
         $(document).ready(function() {
             $('#goswipe').click(function() {
                 $('#dashboard-main, .explore, .light').hide('fast');
-                $('#swiping, .dark').css('display', 'grid');
+                $('#swiping, .dark').css('display', 'flex');
                 $('.swipe-big').show('fast');
                 $('body').toggleClass('swipe-bg');
                 $('body').toggleClass('main-bg');
@@ -320,7 +320,7 @@
         $(document).ready(function() {
             $('.exit-swipe').click(function() {
                 $('#swiping').hide('fast');
-                $('#dashboard-main, .explore, .light').css('display', 'grid');
+                $('#dashboard-main, .explore, .light').css('display', 'flex');
                 $('.swipe-big, .dark').hide('fast');
                 $('body').toggleClass('swipe-bg');
                 $('body').toggleClass('main-bg');
@@ -350,7 +350,7 @@
                 $('.right, .explore').hide('fast');
                 $('.left').show('fast');
                 $('#dashboard-main').show('fast');
-                $('#dashboard-main').css('display', 'grid');
+                $('#dashboard-main').css('display', 'flex');
             });
         });
 
@@ -359,7 +359,7 @@
                 $('.right, #dashboard-main').hide('fast');
                 $('.left').show('fast');
                 $('.explore').show('fast');
-                $('.explore').css('display', 'grid');
+                $('.explore').css('display', 'flex');
             });
         });
 
@@ -367,7 +367,7 @@
             $('#go-contact').click(function() {
                 $('.explore, .left, #dashboard-main').hide('fast');
                 $('.right').show('fast');
-                $('.right').css('display', 'grid');
+                $('.right').css('display', 'flex');
                 $('.right').css('z-index', '10');
             });
         });
@@ -377,7 +377,7 @@
         $(document).ready(function() {
             $('.chat-with').click(function() {
                 if ($('#show-chat-window').is(':hidden')) {
-                    $('#show-chat-window').css('display', 'grid');
+                    $('#show-chat-window').css('display', 'flex');
                     $('#chat').show();
                 } else {
                     $('.overlay-bg').hide('fast');
@@ -396,14 +396,14 @@
         $(document).ready(function() {
             $('.no-games-mobile').click(function() {
                 $(this).hide('fast');
-                $('#my-games').css('display', 'grid');
+                $('#my-games').css('display', 'flex');
             });
         });
 
         $(document).ready(function() {
             $('.loggedas, #show-profile-settings, #profile-menu-pic').click(function() {
                 if ($('#show-profile-settings').is(':hidden')) {
-                    $('#show-profile-settings').css('display', 'grid');
+                    $('#show-profile-settings').css('display', 'flex');
                 } else {
                     $('#show-profile-settings').hide('fast');
                 }
@@ -413,7 +413,7 @@
         $(document).ready(function() {
             $('#show-game-settings, #go-game-settings').click(function() {
                 if ($('#show-game-settings').is(':hidden')) {
-                    $('#show-game-settings').css('display', 'grid');
+                    $('#show-game-settings').css('display', 'flex');
                 } else {
                     $('#show-game-settings').hide('fast');
                 }
@@ -422,7 +422,7 @@
 
         $(document).ready(function() {
             $('#toggle-dashboard').click(function() {
-                $('.dashboard').css('display', 'grid');
+                $('.dashboard').css('display', 'flex');
                 $('.no-games').hide('slow');
             });
         });

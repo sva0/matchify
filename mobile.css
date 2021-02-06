@@ -33,7 +33,6 @@
     #explore-list-main {
         padding: 16px;
         box-sizing: border-box;
-        padding-top: 0;
     }
     .dark-bg-over {
         background: #2D274380;
@@ -221,7 +220,7 @@
     #login {
         background-size: 100%;
         display: grid;
-        height: fit-content;
+        height: 100%;
         padding: 16px;
     }
     #login .clear-flex {

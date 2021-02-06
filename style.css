@@ -346,6 +346,7 @@ hr {
     -webkit-box-flex-grow: 2;
     -ms-flex-grow: 2;
     flex-grow: 2;
+    margin-left: 16px;
     width: 100%;
 }
 
@@ -1172,8 +1173,8 @@ p.infobox {
 #contacts {
     display: grid;
     grid-template-columns: auto;
-    grid-auto-rows: max-content;
     gap: 24px;
+    height: auto;
 }
 
 #contacts .card {
