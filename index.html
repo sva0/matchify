@@ -18,7 +18,11 @@
 
 </head>
 
-<body id="login">
+<body id="login" onload="zmienBg()">
+
+    <div id="background">
+        <img id="img" src="images/valorant.jpg" alt="">
+    </div>
 
     <div class="SameHeightLogin">
 
@@ -55,29 +59,41 @@
 
     </div>
 
-    <script type="text/javascript">
-        var images = new Array('http://placehold.it/250x150', 'http://placehold.it/250x150/123456', 'http://placehold.it/250x150/dbca98');
-        var nextimage = 0;
+    <script>
+        // function sleep(ms) {
+        //     return new Promise(resolve => setTimeout(resolve, ms));
+        // }
 
-        doSlideshow();
 
-        function doSlideshow() {
-            if ($('.slideshowimage').length != 0) {
-                $('.slideshowimage').fadeOut(500, function() {
-                    slideshowFadeIn();
-                    $(this).remove()
-                });
-            } else {
-                slideshowFadeIn();
-            }
-        }
+        // async function zmienBg() {
 
-        function slideshowFadeIn() {
-            $('#login::before').prepend($('this').css('background:', images[nextimage++]).fadeIn(500, function() {
-                setTimeout(doSlideshow, 1000);
-            }));
-            if (nextimage >= images.length)
-                nextimage = 0;
+        //     let imagesArr = new Array('red', 'blue', 'green');
+        //     let imagesLenght = imagesArr.length;
+
+        //     for (let i = 0; i < imagesLenght; i++) {
+
+        //         console.log(imagesArr[i]);
+        //         $('#login').css('background', imagesArr[i]);
+        //         await sleep(4000);
+        //     }
+        // }
+    </script>
+
+    <script>
+        var images = [];
+        images[0] = "images/valorant.jpg";
+        images[1] = "images/Battlefield-V-battle-royale.jpg";
+        images[2] = "images/CSGO-Banner-24-3-2019.jpg";
+
+        var x = 0;
+        setInterval(displayNextImage, 5000);
+
+        function displayNextImage() {
+            x = x < images.length - 1 ? x : -1;
+            $("#img").fadeOut(1000, function() {
+                $(this).attr('src', images[x]).fadeIn(1000);
+            })
+            x++;
         }
     </script>
 </body>
