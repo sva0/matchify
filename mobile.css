@@ -219,6 +219,9 @@
     }
     #login {
         background-size: 100%;
+        display: grid;
+        gap: 16px;
+        grid-template-columns: auto;
     }
     #login .clear-flex {
         -webkit-box-sizing: border-box;
