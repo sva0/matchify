@@ -51,5 +51,33 @@
             <a href="register.html" class="button-secondary"><i class="fas fa-user-plus"></i>Register</a>
 
         </div>
+
+
     </div>
+
+    <script type="text/javascript">
+        var images = new Array('http://placehold.it/250x150', 'http://placehold.it/250x150/123456', 'http://placehold.it/250x150/dbca98');
+        var nextimage = 0;
+
+        doSlideshow();
+
+        function doSlideshow() {
+            if ($('.slideshowimage').length != 0) {
+                $('.slideshowimage').fadeOut(500, function() {
+                    slideshowFadeIn();
+                    $(this).remove()
+                });
+            } else {
+                slideshowFadeIn();
+            }
+        }
+
+        function slideshowFadeIn() {
+            $('#login::before').prepend($('this').css('background:', images[nextimage++]).fadeIn(500, function() {
+                setTimeout(doSlideshow, 1000);
+            }));
+            if (nextimage >= images.length)
+                nextimage = 0;
+        }
+    </script>
 </body>
