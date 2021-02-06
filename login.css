@@ -20,6 +20,11 @@
     }
     
     .clear-flex .title {
+        display: flex;
+        align-items: center;
+    }
+    
+    #inline-buttons {
         display: grid;
         grid-template-columns: auto auto;
         gap: 16px;
@@ -120,4 +125,12 @@
         display: grid;
         grid-template-columns: auto auto;
         gap: 16px;
+        position: fixed;
+        height: auto;
+    }
+    
+    #registerStep1,
+    #registerFinish {
+        position: fixed;
+        height: auto;
     }
