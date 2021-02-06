@@ -361,13 +361,8 @@ hr {
     gap: 16px;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
+    display: grid;
+    grid-template-rows: 74px auto;
     align-items: flex-start;
     position: relative;
     -ms-flex-item-align: stretch;
@@ -385,10 +380,7 @@ hr {
 .explore .inside {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex-grow: 2;
-    -ms-flex-grow: 2;
-    flex-grow: 2;
+    display: grid;
     gap: 16px;
     padding: 16px;
     border-radius: 16px;
@@ -460,11 +452,7 @@ img.category-main {
     flex-direction: column;
     padding: 16px;
     width: -webkit-fill-available;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-transition: .2s;
-    -o-transition: .2s;
     transition: .2s;
 }
 
@@ -833,7 +821,7 @@ iframe {
     -webkit-box-flex-grow: 1;
     -ms-flex-grow: 1;
     flex-grow: 1;
-    grid-template-rows: 67px auto;
+    grid-template-rows: 74px;
     display: grid;
 }
 
@@ -910,6 +898,11 @@ ul {
 .explorerlist iframe {
     height: 232px;
     background: none;
+}
+
+#explore-list-main {
+    width: 100%;
+    height: 100%;
 }
 
 ul.explorerlist {
