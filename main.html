@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="profile-card.css">
+
+    <link rel="stylesheet" href="lists.css">
     <title>Matchify v3 / 2021 / svdzn</title>
     <meta name="description" content="Matchify">
     <meta name="author" content="sovadzn.com">
@@ -55,9 +57,81 @@
                     <div class="title-column">
                         <h4>Edit profile</h4>
                     </div>
-                    <a href="" class="button-cta"><i class="fas fa-stream"></i></a>
+                    <div id="dropdown">
+                        <a class="button-cta"><i class="fas fa-bars"></i></a>
+                        <div class="dropdown-content">
+                            <a onclick="editnotifications()"><i class="fas fa-bell"></i> Notifications</a>
+                            <a href="index.html" id="warning"><i class="fas fa-sign-out-alt"></i> Sign out</a>
+                        </div>
+                    </div>
                 </div>
                 <iframe class="profile-settings" src="profile-settings.html"></iframe>
+                <div id="settings-button-container">
+                    <a class="button"><i class="fas fa-check"></i> Save changes</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="show-notifications" class="overlay-bg">
+        <div id="notifi" class="container container-mobile">
+            <div class="inner-container">
+
+                <div class="title">
+                    <a class="button-cta"><i class="fas fa-arrow-left"></i></a>
+                    <div class="title-column">
+                        <h4>Notifications</h4>
+                    </div>
+
+                </div>
+
+                <label class="input-title"><i class="fas fa-bell"></i> What do you want to get notified about?</label>
+                <div class="special-settings">
+                    <div class="title">
+                        <div class="game-chat-img" id="cod"></div>
+                        <h4>Call of Duty: Black Ops Cold War</h4>
+                    </div>
+                    <ul class="list communicators">
+                        <li>
+                            <p><i class="fas fa-handshake"></i> My new match</p>
+
+                            <div class="switch" href="">
+                                <div class="circle"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p><i class="fas fa-user-plus"></i> New people at this game</p>
+
+                            <div class="switch switch-off" href="">
+                                <div class="circle"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="special-settings">
+                    <div class="title">
+                        <div class="game-chat-img" id="pokemon"></div>
+                        <h4>Pokemon Go</h4>
+                    </div>
+                    <ul class="list communicators">
+                        <li>
+                            <p><i class="fas fa-handshake"></i> My new match</p>
+
+                            <div class="switch switch-off" href="">
+                                <div class="circle"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p><i class="fas fa-user-plus"></i> New people at this game</p>
+
+                            <div class="switch" href="">
+                                <div class="circle"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr>
                 <div id="settings-button-container">
                     <a class="button"><i class="fas fa-check"></i> Save changes</a>
                 </div>
@@ -77,7 +151,12 @@
                         <h4>Game settings</h4>
                         <span id="if-visible">Valorant</span>
                     </div>
-                    <a href="" class="button-cta"><i class="fas fa-stream"></i></a>
+                    <a id="dropdown" class="button-cta"><i class="fas fa-bars"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
                 </div>
                 <iframe class="profile-settings" src="game-settings.html"></iframe>
 
@@ -102,7 +181,7 @@
                             <span>Valorant</span>
                         </div>
 
-                        <a href="" class="button-cta"><i class="fas fa-stream"></i></a>
+                        <a href="" class="button-cta"><i class="fas fa-bars"></i></a>
                     </div>
                 </div>
             </div>
@@ -174,14 +253,14 @@
                         <h4>Swipe</h4>
                         <span>Valorant</span>
                     </div>
-                    <a id="go-game-settings" class="button-cta"><i class="fas fa-stream"></i></a>
+                    <a id="go-game-settings" class="button-cta"><i class="fas fa-bars"></i></a>
                 </div>
                 <div class="swiping-outer-card">
                     <div class="profile-card">
                         <img src="images/swipe-card-img.png" alt="">
                         <h4>sva<img class="lg-img" src="images/pl.svg" alt=""></h4>
 
-
+                        <hr class="short">
                         <ul class="details-row">
                             <li>
                                 <span>communicator(s)</span>
@@ -336,10 +415,9 @@
 
 
 
-
         $(document).ready(function() {
-            $('#switch').click(function() {
-                $(this).toggleClass('.switch-off');
+            $('.switch').click(function() {
+                $(this).toggleClass('switch-off');
             });
         });
 
@@ -429,6 +507,12 @@
                 $('.no-games').hide('slow');
             });
         });
+    </script>
+
+    <script>
+        function editnotifications() {
+            $('#show-notifications').css('display', 'flex');
+        };
     </script>
 </body>
 

@@ -123,10 +123,6 @@ body.main-bg {
     border-color: var(--paragraph);
 }
 
-.button-cta:hover {
-    background: #EEE6FF;
-}
-
 h1,
 h2,
 h3,
@@ -224,17 +220,15 @@ h4 {
 }
 
 .button-delete:hover {
-    background: #fff;
     background: #fFE8E6;
 }
 
 .button-cta {
-    background: #fff;
     color: var(--main-color);
     text-decoration: none;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    background: var(--second-bg);
+    background: #27007f0d;
     color: var(--main-color);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -253,17 +247,19 @@ h4 {
     transition: .2s;
 }
 
-
-/* #swiping .button-cta {
-    background: var(--black-text);
-    border: none;
-    color: #fff;
-} */
+.button-cta:hover {
+    background: #26007f1e;
+}
 
 #swiping .button-cta {
-    background: var(--main-color);
+    /* background: var(--main-color); */
+    /* background: none; */
     border: none;
     color: #fff;
+}
+
+#swiping .button-cta:hover {
+    background: var(--main-color);
 }
 
 .button-cta i {
@@ -330,8 +326,7 @@ hr {
 
 .left .top .title,
 .contact .title,
-.explore .title,
-.clear-flex .title {
+.explore .title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -843,7 +838,8 @@ input::-ms-input-placeholder {
     color: var(--hr);
 }
 
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
     color: var(--hr);
 }
 
@@ -1025,6 +1021,8 @@ textarea {
     min-height: 82px;
     /* width: 100%; */
     height: 100px;
+    font-family: 'Inter', sans-serif;
+    line-height: 150%;
 }
 
 input:hover,
@@ -1258,25 +1256,6 @@ iframe.chat {
     flex-grow: 2;
 }
 
-
-/* #outer-chat:before {
-    content: '';
-    width: 100%;
-    border-radius: 16px;
-    z-index: -2;
-    margin: -24px;
-    height: 100%;
-    position: absolute;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.92)), to(rgba(255, 255, 255, 0.92))), url(images/Battlefield-V-battle-royale.jpg);
-    background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(images/Battlefield-V-battle-royale.jpg);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(images/Battlefield-V-battle-royale.jpg);
-    background: ;
-    background-position: center;
-    background-size: auto 100%;
-} */
-
 .overlay-bg {
     display: none;
     position: fixed;
@@ -1297,12 +1276,31 @@ iframe.profile-settings {
     height: 100%;
 }
 
+#notifi {
+    height: fit-content;
+}
+
+#notifi .inner-container {
+    grid-template-rows: auto;
+    width: 600px;
+    box-sizing: border-box;
+}
+
+#notifi .special-settings h4 {
+    margin-left: 16px;
+}
+
+#notifi label {
+    margin: 0;
+}
+
 .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    justify-content: center;
     -ms-flex-direction: column;
     flex-direction: column;
     width: -webkit-fit-content;
@@ -1539,4 +1537,39 @@ img#profile-menu-pic {
 
 hr.short {
     width: 24px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #fff;
+    min-width: fit-content;
+    z-index: 200;
+    box-shadow: var(--box-shadow);
+    transition: .2s;
+}
+
+#dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    float: none;
+    padding: 16px;
+    transition: .2s;
+    text-decoration: none;
+    display: block;
+    color: var(--paragraph);
+    border-radius: 8px;
+    text-align: left;
+}
+
+.dropdown-content a#warning {
+    color: #FF6051;
+}
+
+.dropdown-content a:hover {
+    background: var(--second-bg);
 }
