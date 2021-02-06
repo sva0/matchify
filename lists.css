@@ -125,11 +125,6 @@ li:nth-last-child(-n+1) {
     width: -webkit-fill-available;
 }
 
-.genre h4,
-.genre i {
-    font-size: 12px;
-}
-
 
 /* .genre i {
     display: flex;

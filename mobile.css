@@ -33,6 +33,11 @@
     #explore-list-main {
         padding: 16px;
         box-sizing: border-box;
+        padding-top: 0;
+    }
+    .genre h4,
+    .genre i {
+        font-size: 12px;
     }
     .dark-bg-over {
         background: #2D274380;

@@ -52,7 +52,9 @@
 
                 <div class="title">
                     <a class="button-cta"><i class="fas fa-arrow-left"></i></a>
-                    <h4>Edit profile</h4>
+                    <div class="title-column">
+                        <h4>Edit profile</h4>
+                    </div>
                     <a href="" class="button-cta"><i class="fas fa-stream"></i></a>
                 </div>
                 <iframe class="profile-settings" src="profile-settings.html"></iframe>
@@ -288,7 +290,7 @@
                     if ($('.right').is(':hidden')) {
                         $(this).html(String('<i class="fas fa-expand"></i> see explore fullsceen'));
                         $('#dashboard-main, .right').show('fast');
-                        $('#dashboard-main, .right').css('display', 'flex');
+                        $('#dashboard-main, .right').css('display', 'gird');
                     } else {
                         $('#dashboard-main, .right').hide('fast');
                         $(this).html(String('<i class="fas fa-compress"></i> exit fullscreen'));
@@ -309,7 +311,7 @@
         $(document).ready(function() {
             $('#goswipe').click(function() {
                 $('#dashboard-main, .explore, .light').hide('fast');
-                $('#swiping, .dark').css('display', 'flex');
+                $('#swiping').css('display', 'flex');
                 $('.swipe-big').show('fast');
                 $('body').toggleClass('swipe-bg');
                 $('body').toggleClass('main-bg');
@@ -320,7 +322,8 @@
         $(document).ready(function() {
             $('.exit-swipe').click(function() {
                 $('#swiping').hide('fast');
-                $('#dashboard-main, .explore, .light').css('display', 'flex');
+                $('.light').css('display', 'flex');
+                $('#dashboard-main, .explore').css('display', 'grid');
                 $('.swipe-big, .dark').hide('fast');
                 $('body').toggleClass('swipe-bg');
                 $('body').toggleClass('main-bg');
@@ -350,7 +353,7 @@
                 $('.right, .explore').hide('fast');
                 $('.left').show('fast');
                 $('#dashboard-main').show('fast');
-                $('#dashboard-main').css('display', 'flex');
+                $('#dashboard-main').css('display', 'grid');
             });
         });
 
@@ -359,7 +362,7 @@
                 $('.right, #dashboard-main').hide('fast');
                 $('.left').show('fast');
                 $('.explore').show('fast');
-                $('.explore').css('display', 'flex');
+                $('.explore').css('display', 'grid');
             });
         });
 
@@ -367,7 +370,7 @@
             $('#go-contact').click(function() {
                 $('.explore, .left, #dashboard-main').hide('fast');
                 $('.right').show('fast');
-                $('.right').css('display', 'flex');
+                $('.right').css('display', 'grid');
                 $('.right').css('z-index', '10');
             });
         });
