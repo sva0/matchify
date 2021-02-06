@@ -20,9 +20,9 @@
     }
     
     .clear-flex .title {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 16px;
     }
     
     .title h4 {
