@@ -226,12 +226,12 @@
         background-size: 100%;
         display: grid;
         height: 100%;
-        padding: 16px;
     }
     #login .clear-flex {
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
-        width: 100%;
+        width: calc(100% - 32px);
+        margin: 16px;
     }
     #login::before {
         width: calc(100% + 64px);
@@ -241,7 +241,6 @@
     .SameHeightLogin {
         display: grid;
         grid-template-columns: auto;
-        gap: 16px;
-        margin: auto;
+        gap: 0;
     }
 }

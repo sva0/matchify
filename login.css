@@ -125,12 +125,12 @@
         display: grid;
         grid-template-columns: auto auto;
         gap: 16px;
-        position: fixed;
+        position: absolute;
         height: auto;
     }
     
     #registerStep1,
     #registerFinish {
-        position: fixed;
+        position: absolute;
         height: auto;
     }
