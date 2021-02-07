@@ -208,11 +208,11 @@ h4 {
 
 .button-secondary {
     color: var(--main-color);
-    background: #f5f0ff;
+    background: #f1e9ff;
 }
 
 .button-secondary:hover {
-    background: #EEE6FF;
+    background: #e7dcff;
 }
 
 .button-delete {

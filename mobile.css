@@ -51,6 +51,9 @@
         margin: -16px;
         padding: 16px;
     }
+    #notifi .inner-container {
+        width: 100%;
+    }
     .no-games-mobile {
         height: 60%;
         background-size: 700%;

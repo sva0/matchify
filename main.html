@@ -81,11 +81,14 @@
                     <a class="button-cta"><i class="fas fa-arrow-left"></i></a>
                     <div class="title-column">
                         <h4>Notifications</h4>
+
+                        <!-- <span> What do you want to get notified about?</span> -->
                     </div>
-
+                    <span style="margin-right: 8px; margin-left: 16px;">all</span>
+                    <div class="switch switch-off" href="">
+                        <div class="circle"></div>
+                    </div>
                 </div>
-
-                <label class="input-title"><i class="fas fa-bell"></i> What do you want to get notified about?</label>
                 <div class="special-settings">
                     <div class="title">
                         <div class="game-chat-img" id="cod"></div>
@@ -529,6 +532,10 @@
     <script>
         function editnotifications() {
             $('#show-notifications').css('display', 'flex');
+            $('.right').css('z-index', '8');
+            $('.overlay-bg').click(function() {
+                $(this).hide();
+            })
         };
     </script>
 </body>
