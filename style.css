@@ -785,9 +785,6 @@ iframe {
     -webkit-box-flex-grow: 2;
     -ms-flex-grow: 2;
     flex-grow: 2;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
 }
 
 .right {
