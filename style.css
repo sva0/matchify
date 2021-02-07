@@ -13,7 +13,7 @@
     --paragraph: #736B97;
     --black: #1C182C;
     --black-text: #160A42;
-    --box-shadow: 0px 8px 16px rgba(17, 17, 17, 0.04);
+    --box-shadow: 0px 8px 16px rgba(23, 0, 78, 0.144);
     --border-color: #D9D3E6;
     --border: 1px solid var(--border-color);
     --hr: #B7B2CB;
@@ -1522,6 +1522,7 @@ ul.list .title-column {
     z-index: 200;
     box-shadow: var(--box-shadow);
     transition: .2s;
+    transform: translateX(calc(-100% + 42px));
 }
 #dropdown:hover .dropdown-content {
     display: block;
