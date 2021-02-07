@@ -315,7 +315,6 @@ hr {
     flex-direction: row;
     -ms-flex-item-align: stretch;
     align-self: stretch;
-    gap: 16px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -355,11 +354,8 @@ hr {
 
 .dashboard,
 .explore {
-    gap: 16px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: grid;
-    grid-template-rows: 74px auto;
+    grid-template-rows: 90px auto;
     align-items: flex-start;
     position: relative;
     -ms-flex-item-align: stretch;
@@ -958,10 +954,13 @@ ul.explorerlist li {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    gap: 16px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+}
+
+.avatar img {
+    margin-right: 16px;
 }
 
 #show-profile-settings,
@@ -1012,7 +1011,7 @@ select:-webkit-autofill:focus {
 
 input,
 select {
-    min-height: 52px;
+    height: 52px;
 }
 
 textarea {
@@ -1442,8 +1441,6 @@ ul#menu {
 
 #vote-bar {
     display: flex;
-    position: absolute;
-    margin: 8px;
     bottom: 0;
     width: -webkit-fill-available;
     background: none;
@@ -1499,6 +1496,7 @@ img#profile-menu-pic {
     -ms-flex-item-align: stretch;
     -ms-grid-row-align: stretch;
     align-self: stretch;
+    grid-template-rows: 72px auto 104px;
 }
 
 #swiping .title {
@@ -1514,7 +1512,6 @@ img#profile-menu-pic {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    position: absolute;
     width: 100%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;

@@ -33,11 +33,11 @@
     #explore-list-main {
         padding: 16px;
         box-sizing: border-box;
-        padding-top: 0;
     }
     .genre h4,
     .genre i {
-        font-size: 12px;
+        font-size: 14px;
+        color: var(--input-title-c);
     }
     .dark-bg-over {
         background: #2D274380;
@@ -60,14 +60,11 @@
     .no-games-mobile .gradient#no-games {
         height: 100%;
     }
-    .text {
-        display: none;
-    }
     .overlay-bg {
         z-index: 12;
     }
-    .button-delete i {
-        margin: 0;
+    .button-delete {
+        margin-top: 16px;
     }
     #explore.card,
     #dashboard.card {
@@ -106,28 +103,20 @@
     #desktop-title {
         display: none;
     }
-    .mobile {
+    .mobile,
+    .explore {
         -webkit-box-flex-grow: 2;
         -ms-flex-grow: 2;
         flex-grow: 2;
-        padding: 16px;
+        grid-template-rows: 60px auto;
     }
-    .dashboard,
-    .explore {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
+    .mobile {
+        padding: 16px;
     }
     .gradient .dashboard iframe {
         -webkit-box-flex-grow: 2;
         -ms-flex-grow: 2;
         flex-grow: 2;
-    }
-    .mobile {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
     }
     .left {
         margin: 0;
@@ -153,9 +142,6 @@
     #my-games {
         display: none;
     }
-    .explore {
-        gap: 0;
-    }
     .contact {
         width: 100%;
         padding: 0px;
@@ -177,6 +163,7 @@
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+        gap: 0;
     }
     .dashboard-list {
         grid-auto-flow: row;
@@ -241,6 +228,6 @@
     .SameHeightLogin {
         display: grid;
         grid-template-columns: auto;
-        gap: 0;
+        gap:
     }
 }

@@ -236,7 +236,7 @@
 
             </div>
 
-            <div class="explore">
+            <div class="explore ">
                 <div class="top">
 
                     <div class="title-column">
@@ -401,10 +401,15 @@
         $(document).ready(function() {
             $('#goswipe').click(function() {
                 $('#dashboard-main, .explore, .light').hide('fast');
-                $('#swiping').css('display', 'flex');
+                $('#swiping').css('display', 'grid');
                 $('.swipe-big').show('fast');
                 $('body').toggleClass('swipe-bg');
                 $('body').toggleClass('main-bg');
+                if ($('#menu').is(':visible')) {
+                    $('#menu').toggle();
+                } else {
+
+                }
             });
         });
 
@@ -419,6 +424,7 @@
                 $('body').toggleClass('main-bg');
             });
         });
+
 
 
 
