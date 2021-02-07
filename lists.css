@@ -144,8 +144,10 @@ li:nth-last-child(-n+1) {
     justify-content: center;
 } */
 
+.genre h4,
 .genre i {
-    color: var(--main-color)
+    font-size: 14px;
+    color: var(--input-title-c);
 }
 
 li .title {

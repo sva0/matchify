@@ -274,6 +274,7 @@ p {
     color: var(--paragraph);
     letter-spacing: 0.02em;
     margin: 0;
+    font-weight: 500;
 }
 
 hr {
@@ -501,6 +502,10 @@ p#toggle-dashboard {
     padding: 16px;
 }
 
+.gradient span {
+    color: var(--hr)
+}
+
 .no-games .top {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -545,6 +550,8 @@ p#toggle-dashboard {
     padding: 8px;
     border-radius: 8px;
     margin: 8px;
+    color: var(--black-text);
+    font-family: Montserrat;
 }
 
 #my-games {
@@ -1079,7 +1086,7 @@ input:focus {
 
 .warning p,
 .warning h4 {
-    color: #FF6051;
+    color: #fFE8E6;
 }
 
 .warning {
@@ -1101,12 +1108,11 @@ input:focus {
     -ms-flex-pack: center;
     justify-content: center;
     padding: 16px;
-    color: #fff;
     font-weight: 700;
     font-size: 14px;
     gap: 8px;
-    background: #fFE8E6;
-    border: 2px solid #FFE8E6;
+    background: #FF6051;
+    border: none;
 }
 
 p.infobox {
@@ -1149,15 +1155,21 @@ p.infobox {
     transition: .2s;
 }
 
+.isVisible {
+    background: var(--second-bg);
+    border: 0;
+}
+
 #if-visible {
     text-decoration: line-through;
 }
 
+
+}
 .is-visible-yes {
     padding: 0;
     border: 0;
 }
-
 .special-settings .title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1165,8 +1177,8 @@ p.infobox {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    align-items: center;
 }
-
 #profile-settings,
 #contacts {
     display: grid;
@@ -1174,7 +1186,6 @@ p.infobox {
     gap: 24px;
     height: auto;
 }
-
 #contacts .card {
     width: auto;
     height: -webkit-fit-content;
@@ -1184,11 +1195,10 @@ p.infobox {
     padding: 0;
     border-radius: 8px;
 }
-
 .gradient h4 {
     color: #fff;
+    line-height: 150%;
 }
-
 #contacts .gradient {
     width: auto;
     padding: 16px;
@@ -1199,12 +1209,10 @@ p.infobox {
     background: -o-linear-gradient(top, rgba(22, 10, 66, 0.5) 24.45%, #160A42 100%);
     background: linear-gradient(180deg, rgba(22, 10, 66, 0.5) 24.45%, #160A42 100%);
 }
-
 #outer-chat .gradient img {
     border-radius: 8px;
     height: 48px;
 }
-
 #outer-chat {
     z-index: 20;
     margin-right: 400px;
@@ -1216,30 +1224,25 @@ p.infobox {
     border-radius: 16px;
     background: #fff;
 }
-
 #outer-chat .card {
     width: 100%;
     height: fit-content;
     background-size: 100%;
 }
-
 #outer-chat .gradient {
     background: linear-gradient( 0deg, rgba(7, 0, 59, 0.9), rgba(7, 0, 59, 0.7));
 }
-
 
 /* #outer-chat .button-cta {
     background-color: var(--main-color);
     color: #fff;
 } */
-
 iframe.chat {
     flex-grow: 1;
     width: 600px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 .type-message {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1249,13 +1252,11 @@ iframe.chat {
     -ms-flex-align: center;
     align-items: center;
 }
-
 .type-message input {
     -webkit-box-flex-grow: 2;
     -ms-flex-grow: 2;
     flex-grow: 2;
 }
-
 .overlay-bg {
     display: none;
     position: fixed;
@@ -1270,30 +1271,24 @@ iframe.chat {
     -ms-flex-pack: center;
     justify-content: center;
 }
-
 iframe.profile-settings {
     width: 600px;
     height: 100%;
 }
-
 #notifi {
     height: fit-content;
 }
-
 #notifi .inner-container {
     grid-template-rows: auto;
     width: 600px;
     box-sizing: border-box;
 }
-
 #notifi .special-settings h4 {
     margin-left: 16px;
 }
-
 #notifi label {
     margin: 0;
 }
-
 .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1312,7 +1307,6 @@ iframe.profile-settings {
     -webkit-box-shadow: var(--box-shadow);
     box-shadow: var(--box-shadow);
 }
-
 .container .title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1326,11 +1320,9 @@ iframe.profile-settings {
     -ms-flex-align: center;
     align-items: center;
 }
-
 .container hr {
     margin-left: 16px;
 }
-
 .inner-container {
     background: #fff;
     padding: 24px;
@@ -1342,31 +1334,32 @@ iframe.profile-settings {
     box-shadow: 0px 8px 32px rgba(45, 58, 77, 0.24);
     height: 100%;
 }
-
 @-webkit-keyframes animatebg {
     0% {
         background-size: auto 100%;
     }
+    
     50% {
         background-size: auto 102%;
     }
+    
     100% {
         background-size: auto 100%;
     }
 }
-
 @keyframes animatebg {
     0% {
         background-size: auto 100%;
     }
+    
     50% {
         background-size: auto 102%;
     }
+    
     100% {
         background-size: auto 100%;
     }
 }
-
 .clear-flex {
     -webkit-box-flex-grow: 0;
     -ms-flex-grow: 0;
@@ -1376,51 +1369,42 @@ iframe.profile-settings {
     width: 500px;
 }
 
-
 /** GAMES  ***/
-
 #cod {
     background: url('images/0_Call_of_duty_Cold_War.jpg');
     background-size: auto 100%;
     background-position: center;
 }
-
 #bfv {
     background: url('images/Battlefield-V-battle-royale.jpg');
     background-size: auto 100%;
     background-position: center;
 }
-
 #fifa {
     background: url('images/fifa.jfif');
     background-position: center;
     background-size: auto 100%;
 }
-
 #csgo {
     background: url('images/CSGO-Banner-24-3-2019.jpg');
     background-size: auto 100%;
     background-position: center;
 }
-
 #pokemon {
     background: url('images/pokemon.jpg');
     background-size: auto 100%;
     background-position: center;
 }
-
 #valorant {
     background: url('images/valorant.jpg');
     background-size: auto 100%;
     background-position: center;
 }
-
 #lol {
     background: url('images/image.jfif');
     background-size: auto 100%;
     background-position: center;
 }
-
 ul#menu {
     display: none;
     position: fixed;
@@ -1438,7 +1422,6 @@ ul#menu {
     z-index: 12;
     background: #fff;
 }
-
 #vote-bar {
     display: flex;
     bottom: 0;
@@ -1448,7 +1431,6 @@ ul#menu {
     gap: 64px;
     place-content: center;
 }
-
 .vote {
     display: flex;
     height: 72px;
@@ -1459,30 +1441,24 @@ ul#menu {
     font-size: 24px;
     color: #fff;
 }
-
 .voteYes {
     background: #09ECA7;
 }
-
 .voteNo {
     background: #F05652;
 }
-
 ul#menu li {
     padding: 0;
     background: none;
     border: none;
     border-radius: var(--rad);
 }
-
 .menu-option {
     height: 14px;
 }
-
 img#profile-menu-pic {
     height: 32px;
 }
-
 #swiping {
     -webkit-box-flex-grow: 2;
     -ms-flex-grow: 2;
@@ -1498,7 +1474,6 @@ img#profile-menu-pic {
     align-self: stretch;
     grid-template-rows: 72px auto 104px;
 }
-
 #swiping .title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1516,15 +1491,12 @@ img#profile-menu-pic {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 #swiping .title h4 {
     color: #fff;
 }
-
 .title .title-column {
     margin-left: 16px;
 }
-
 .swipe-bg {
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(7, 0, 59, 0.9)), to(rgba(7, 0, 59, 0.7))), url('images/valorant.jpg');
     background: -o-linear-gradient(bottom, rgba(7, 0, 59, 0.9), rgba(7, 0, 59, 0.7)), url('images/valorant.jpg');
@@ -1532,11 +1504,9 @@ img#profile-menu-pic {
     background-size: auto 100%;
     background-position: center;
 }
-
 hr.short {
     width: 24px;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -1548,11 +1518,9 @@ hr.short {
     box-shadow: var(--box-shadow);
     transition: .2s;
 }
-
 #dropdown:hover .dropdown-content {
     display: block;
 }
-
 .dropdown-content a {
     float: none;
     padding: 16px;
@@ -1563,11 +1531,9 @@ hr.short {
     border-radius: 8px;
     text-align: left;
 }
-
 .dropdown-content a#warning {
     color: #FF6051;
 }
-
 .dropdown-content a:hover {
     background: var(--second-bg);
 }

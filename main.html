@@ -78,7 +78,7 @@
             <div class="inner-container">
 
                 <div class="title">
-                    <a class="button-cta"><i class="fas fa-arrow-left"></i></a>
+                    <a id="exit" class="button-cta"><i class="fas fa-arrow-left"></i></a>
                     <div class="title-column">
                         <h4>Notifications</h4>
 
@@ -373,7 +373,7 @@
                 $(this).toggleClass('button-delete');
 
                 if ($('.no-games').is(':visible')) {
-                    $('.no-games').hide();
+                    $('.no-games').fadeOut;
                     $('#dashboard-main').show();
 
                     $('#dashboard-main, .right').toggle('fast');
@@ -419,7 +419,7 @@
 
         $(document).ready(function() {
             $('.exit-swipe').click(function() {
-                $('#swiping').hide('fast');
+                $('#swiping').fadeOut('fast');
                 $('.light').css('display', 'flex');
                 $('#dashboard-main, .explore').css('display', 'grid');
                 $('.swipe-big, .dark').hide('fast');
@@ -506,7 +506,7 @@
                 if ($('#show-profile-settings').is(':hidden')) {
                     $('#show-profile-settings').css('display', 'flex');
                 } else {
-                    $('#show-profile-settings').hide('fast');
+                    $('#show-profile-settings').fadeOut('fast');
                 }
             });
         });
@@ -516,14 +516,14 @@
                 if ($('#show-game-settings').is(':hidden')) {
                     $('#show-game-settings').css('display', 'flex');
                 } else {
-                    $('#show-game-settings').hide('fast');
+                    $('#show-game-settings').fadeOut('fast');
                 }
             });
         });
 
         $(document).ready(function() {
             $('#toggle-dashboard').click(function() {
-                $('.dashboard').css('display', 'flex');
+                $('.dashboard').css('display', 'grid');
                 $('.no-games').hide('slow');
             });
         });
@@ -533,8 +533,8 @@
         function editnotifications() {
             $('#show-notifications').css('display', 'flex');
             $('.right').css('z-index', '8');
-            $('.overlay-bg').click(function() {
-                $(this).hide();
+            $('#exit').click(function() {
+                $('.overlay-bg').fadeOut();
             })
         };
     </script>
