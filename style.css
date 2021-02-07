@@ -412,10 +412,8 @@ hr {
     max-width: fit-content;
 }
 
-#fullscreen:hover {
-    border-color: var(--black-text);
-    background: #fff;
-    color: var(--black-text);
+#fullscreen i {
+    margin-right: 8px;
 }
 
 .category-main {
@@ -1505,11 +1503,14 @@ img#profile-menu-pic {
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(7, 0, 59, 0.9)), to(rgba(7, 0, 59, 0.7))), url('images/valorant.jpg');
     background: -o-linear-gradient(bottom, rgba(7, 0, 59, 0.9), rgba(7, 0, 59, 0.7)), url('images/valorant.jpg');
     background: linear-gradient(0deg, rgba(7, 0, 59, 0.9), rgba(7, 0, 59, 0.7)), url('images/Battlefield-V-battle-royale.jpg');
-    background-size: auto 100%;
+    background-size: auto 120%;
     background-position: center;
 }
 hr.short {
     width: 24px;
+}
+ul.list .title-column {
+    gap: 2px;
 }
 .dropdown-content {
     display: none;
