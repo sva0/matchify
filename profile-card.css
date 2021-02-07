@@ -26,8 +26,8 @@
     position: absolute;
     border-radius: 16px;
     /* background: linear-gradient(180deg, rgba(28, 24, 44, 0) 16.82%, #1C182C 100%), url('images/valorant.jpg'); */
-    background: url('images/valorant.jpg');
-    background-size: 100%;
+    background: url('images/image.jfif');
+    background-size: 110%;
     background-position: center;
     z-index: 1;
 }

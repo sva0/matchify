@@ -23,7 +23,7 @@
 
 <body class="main-bg">
     <div class="search-bar light">
-        <div class="logo-top"><img src="images/logo-top.svg" alt=""></div>
+        <div class="logo-top"><img src="images/logo-top.svg" style="height: 16px" alt=""></div>
         <h4>Matchify.gg</h4>
         <i style="margin-left: 32px;" class="fas fa-search"></i>
         <input type="text" value="Search...">
@@ -41,7 +41,7 @@
     </div>
 
     <!-- <div class="search-bar dark">
-        <div class="logo-top"><img src="images/logo-top.svg" alt=""></div>
+        <div class="logo-top"><img src="images/logo-top.svg" style="height: 16px"  alt=""></div>
         <h4>Matchify.gg</h4>
         <i style="margin-left: 32px;" class="fas fa-search"></i>
         <input type="text" value="Search...">
@@ -58,7 +58,7 @@
             <div class="inner-container">
 
                 <div class="title">
-                    <a class="button-cta"><i class="fas fa-arrow-left"></i></a>
+                    <a id="show-profile-settings-exit" class="button-cta"><i class="fas fa-arrow-left"></i></a>
                     <div class="title-column">
                         <h4>Edit profile</h4>
                     </div>
@@ -154,10 +154,12 @@
             <div class="inner-container">
                 <div class="title">
                     <a class="button-cta"><i class="fas fa-arrow-left"></i></a>
+                    <div class="game-chat-img" id="lol"></div>
+
                     <div class="title-column">
 
                         <h4>Game settings</h4>
-                        <span id="if-visible">Valorant</span>
+                        <span id="if-visible">League of Legends</span>
                     </div>
                     <a id="dropdown" class="button-cta"><i class="fas fa-bars"></i></a>
                     <div class="dropdown-content">
@@ -221,10 +223,10 @@
                 <div class="top">
                     <div class="title-column">
                         <!-- <img src="images/h-w.svg" class="category-main" alt=""> -->
-                        <div class="inline">
-                            <img src="images/menu/dashboard.svg" alt="">
-                            <h2 id="goswipe">Dashboard</h2>
-                        </div>
+                        <!-- <div class="inline"> -->
+                        <img src="images/menu/dashboard-top.svg" style="height: 16px" alt="">
+                        <h2 id="goswipe">Dashboard</h2>
+                        <!-- </div> -->
                         <p id="desktop-title">Games are sorted by your activity</p>
                         <hr class="short">
                     </div>
@@ -248,11 +250,11 @@
                 <div class="top">
 
                     <div class="title-column">
-                        <div class="inline">
-                            <img src="images/menu/explore.svg" alt="">
+                        <!-- <div class="inline"> -->
+                        <img src="images/menu/explore-top.svg" style="height: 16px" alt="">
 
-                            <h2>Explore</h2>
-                        </div>
+                        <h2>Explore</h2>
+                        <!-- </div> -->
                         <p id="desktop-title">List of games grouped by genres, and sorted by their populatiry </p>
                         <hr class="short">
                     </div>
@@ -267,10 +269,11 @@
             <div id="swiping">
                 <div class="title">
                     <a class="button-cta exit-swipe"><i class="fas fa-arrow-left"></i></a>
+                    <div class="game-chat-img" id="lol"></div>
                     <div class="title-column">
 
                         <h4>Swipe</h4>
-                        <span>Valorant</span>
+                        <span>League of Legends</span>
                     </div>
 
                     <div id="dropdown">
@@ -328,10 +331,10 @@
                     <div class="title-column">
 
                         <!-- <img src="images/c-w.svg" class="category-main" alt=""> -->
-                        <div class="inline">
-                            <img src="images/menu/contacts.svg" alt="">
-                            <h2 class="chat-with">Contacts</h2>
-                        </div>
+                        <!-- <div class="inline"> -->
+                        <img src="images/menu/contacts-top.svg" style="height: 16px" alt="">
+                        <h2 class="chat-with">Contacts</h2>
+                        <!-- </div> -->
                         <p id="desktop-title">List of your contacts</p>
                         <hr class="short">
                     </div>
@@ -514,7 +517,7 @@
         });
 
         $(document).ready(function() {
-            $('.loggedas, #show-profile-settings, #profile-menu-pic').click(function() {
+            $('.loggedas, #show-profile-settings-exit, #profile-menu-pic').click(function() {
                 if ($('#show-profile-settings').is(':hidden')) {
                     $('#show-profile-settings').css('display', 'flex');
                 } else {
@@ -544,7 +547,9 @@
     <script>
         function editnotifications() {
             $('#show-notifications').css('display', 'flex');
+            $('#show-notifications').css('z-index', '14');
             $('.right').css('z-index', '8');
+
             $('#exit').click(function() {
                 $('.overlay-bg').fadeOut();
             })

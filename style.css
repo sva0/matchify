@@ -258,6 +258,10 @@ h4 {
     color: #fff;
 }
 
+.exit-swipe {
+    margin-right: 16px;
+}
+
 #swiping .button-cta:hover {
     background: var(--main-color);
 }
@@ -324,6 +328,10 @@ hr {
     justify-content: space-between;
 }
 
+.top h2 {
+    font-size: 36px;
+}
+
 .left .top .title,
 .contact .title,
 .explore .title {
@@ -356,7 +364,7 @@ hr {
 .dashboard,
 .explore {
     display: grid;
-    grid-template-rows: 90px auto;
+    grid-template-rows: 114px auto;
     align-items: flex-start;
     position: relative;
     -ms-flex-item-align: stretch;
@@ -776,15 +784,13 @@ iframe {
 .title-column {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto;
     gap: 8px;
     -webkit-box-flex-grow: 2;
     -ms-flex-grow: 2;
     flex-grow: 2;
+    align-items: flex-start;
 }
 
 .right {
@@ -805,7 +811,7 @@ iframe {
 
 .contact {
     padding: 16px;
-    gap: 24px;
+    gap: 16px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     z-index: 100;
@@ -816,7 +822,7 @@ iframe {
     -webkit-box-flex-grow: 1;
     -ms-flex-grow: 1;
     flex-grow: 1;
-    grid-template-rows: 74px;
+    grid-template-rows: 98px auto;
     display: grid;
 }
 
@@ -919,6 +925,7 @@ ul.explorerlist li {
     flex-direction: column;
     padding: 16px;
     border-radius: 8px;
+    gap: 0;
     background: var(--second-bg);
     margin-bottom: 16px;
     align-items: flex-start;
@@ -972,7 +979,8 @@ ul.explorerlist li {
 }
 
 #show-profile-settings,
-#show-game-settings {
+#show-game-settings,
+#shot-notifications {
     z-index: 12;
 }
 
@@ -1325,6 +1333,9 @@ iframe.profile-settings {
     -ms-flex-align: center;
     align-items: center;
 }
+.container .title-column {
+    margin-left: 16px;
+}
 .container hr {
     margin-left: 16px;
 }
@@ -1499,13 +1510,14 @@ img#profile-menu-pic {
 #swiping .title h4 {
     color: #fff;
 }
-.title .title-column {
+
+/* .title .title-column {
     margin-left: 16px;
-}
+} */
 .swipe-bg {
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(7, 0, 59, 0.9)), to(rgba(7, 0, 59, 0.7))), url('images/valorant.jpg');
-    background: -o-linear-gradient(bottom, rgba(7, 0, 59, 0.9), rgba(7, 0, 59, 0.7)), url('images/valorant.jpg');
-    background: linear-gradient(0deg, rgba(7, 0, 59, 0.9), rgba(7, 0, 59, 0.7)), url('images/Battlefield-V-battle-royale.jpg');
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(7, 0, 59, 0.9)), to(rgba(7, 0, 59, 0.7))), url('images/image.jfif');
+    background: -o-linear-gradient(bottom, rgba(7, 0, 59, 0.9), rgba(7, 0, 59, 0.7)), url('images/image.jfif');
+    background: linear-gradient(0deg, rgba(7, 0, 59, 0.9), rgba(7, 0, 59, 0.7)), url('images/image.jfif');
     background-size: auto 120%;
     background-position: center;
 }
