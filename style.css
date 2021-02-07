@@ -224,12 +224,12 @@ h4 {
 }
 
 .button-cta {
-    color: var(--main-color);
+    color: var(--black-text);
     text-decoration: none;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    background: #27007f0d;
-    color: var(--main-color);
+    /* background: #27007f0d; */
+    /* color: var(--main-color); */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1060,6 +1060,10 @@ input:focus {
     align-items: center;
 }
 
+.infobox h4 i {
+    margin-right: 8px;
+}
+
 .info-box h4 {
     text-transform: uppercase;
     font-size: 12px;
@@ -1408,7 +1412,7 @@ iframe.profile-settings {
 ul#menu {
     display: none;
     position: fixed;
-    margin: 12px;
+    margin: 12px 32px;
     align-items: center;
     bottom: 0;
     width: -webkit-fill-available;
