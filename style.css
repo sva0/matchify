@@ -860,6 +860,11 @@ span {
     gap: 16px;
 }
 
+.loggedas img {
+    height: 52px;
+    border-radius: 8px;
+}
+
 .login {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -963,6 +968,7 @@ ul.explorerlist li {
 
 .avatar img {
     margin-right: 16px;
+    border-radius: 8px;
 }
 
 #show-profile-settings,
