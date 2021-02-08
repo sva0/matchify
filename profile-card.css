@@ -32,9 +32,18 @@
     z-index: 1;
 }
 
-.profile-card img {
+#chat-card.profile-card::after {
+    background: url('images/valorant.jpg');
+    background-size: 110%;
+    background-position: center;
+}
+
+.profile-card #profile-pic {
     align-self: center;
     z-index: 2;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
 }
 
 img.lg-img {
@@ -109,6 +118,7 @@ span i {
     -ms-grid-row-align: stretch;
     align-self: stretch;
 }
+
 #swiping .title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -125,12 +135,15 @@ span i {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 #swiping .title h4 {
     color: #fff;
 }
+
 #swiping .title span {
     color: var(--paragraph-light)
 }
+
 #vote-bar {
     display: flex;
     bottom: 0;
@@ -141,6 +154,7 @@ span i {
     gap: 64px;
     place-content: center;
 }
+
 .vote {
     display: flex;
     height: 72px;
@@ -151,19 +165,19 @@ span i {
     font-size: 24px;
     color: #fff;
 }
+
 .voteYes {
     background: #09ECA7;
 }
+
 .voteNo {
     background: #F05652;
 }
 
 @media (max-width: 600px) {
-
     .profile-card {
         width: 100%;
     }
-
     .profile-card::after {
         width: calc(100% - 32px);
     }

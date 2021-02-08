@@ -166,7 +166,7 @@
     <div id="show-chat-window" class="overlay-bg">
         <div id="outer-chat" class="container container-mobile">
             <div class="title">
-                <a class="button-cta"><i class="fas fa-arrow-left"></i></a>
+                <a id="exit-chat" class="button-cta"><i class="fas fa-arrow-left"></i></a>
                 <img src="images/profiles/Rectangle 15.png" height="48px" style="margin-left: 16px;" alt="">
                 <div class="title-column">
                     <h4>sva-iwnl-</h4>
@@ -176,6 +176,7 @@
                     <a class="button-cta"><i class="fas fa-bars"></i></a>
                     <div class="dropdown-content">
                         <a><i class="fas fa-thumbs-down"></i> Report</a>
+                        <a onclick="showChatCard()" id="show-chat-card"><i class="fas fa-eye"></i> Preview profile</a>
                         <a id="warning"><i class="fas fa-trash-alt"></i> Delete contact</a>
                     </div>
                 </div>
@@ -194,6 +195,34 @@
             </div>
         </div>
 
+    </div>
+    <div id="preview-chat-card" class="overlay-bg">
+        <div class="profile-card" id="chat-card" style="margin-right: 400px;">
+            <img id="profile-pic" src="images/profiles/Rectangle 15.png" alt="">
+            <h4 id="name">sva<img class="lg-img" src="images/pl.svg" alt=""></h4>
+
+            <hr class="short">
+            <ul class="details-row">
+                <li>
+                    <span>communicator(s)</span>
+                    <h4><i class="fab fa-skype"></i> <i class="fab fa-discord"></i></h4>
+                </li>
+                <li>
+                    <span>platforms(s)</span>
+                    <h4><i class="fab fa-playstation"></i></h4>
+                </li>
+                <li>
+                    <span>age</span>
+                    <h4>22</h4>
+                </li>
+
+            </ul>
+
+            <div class="details-box">
+                <span><i class="fas fa-quote-right"></i> profile description</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+        </div>
     </div>
     <div class="under-search">
         <div class="left">
@@ -268,7 +297,7 @@
                 </div>
                 <div class="swiping-outer-card">
                     <div class="profile-card">
-                        <img src="images/swipe-card-img.png" alt="">
+                        <img id="profile-pic" src="images/swipe-card-img.png" alt="">
                         <h4 id="name">sva<img class="lg-img" src="images/pl.svg" alt=""></h4>
 
                         <hr class="short">
@@ -333,16 +362,16 @@
 
         <ul id="menu">
             <li id="go-dashboard">
-                <img src="images/home.svg" class="menu-option" alt="">
+                <img src="images/menu/mobile-dashboard.svg" class="menu-option" alt="">
             </li>
             <li id="go-explore">
-                <img src="images/explore-menu.svg" class="menu-option" alt="">
+                <img src="images/menu/mobile-explore.svg" class="menu-option" alt="">
             </li>
             <li id="go-contact">
-                <img src="images/contacts-menu.svg" class="menu-option" alt="">
+                <img src="images/menu/mobile-contacts.svg" class="menu-option" alt="">
             </li>
             <li>
-                <img src="images/img.png" id="profile-menu-pic" class="menu-option" alt="">
+                <img src="images/profiles/Rectangle 14.png" id="profile-menu-pic" class="menu-option" alt="">
             </li>
         </ul>
 
@@ -484,7 +513,7 @@
         });
 
         $(document).ready(function() {
-            $('#hide-cha, #show-chat-window').click(function() {
+            $('#exit-chat').click(function() {
                 $('.overlay-bg').fadeOut('fast');
             });
         });
@@ -534,6 +563,15 @@
 
             $('#exit').click(function() {
                 $('.overlay-bg').fadeOut();
+            })
+        };
+    </script>
+    <script>
+        function showChatCard() {
+            $('#preview-chat-card').css('display', 'flex');
+
+            $('#preview-chat-card').click(function() {
+                $(this).fadeOut();
             })
         };
     </script>
