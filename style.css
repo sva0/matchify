@@ -565,6 +565,15 @@ span.span-special {
     box-shadow: var(--box-shadow);
 }
 
+span.span-special i {
+    color: #fff;
+}
+
+p span.span-special {
+    background: var(--main-color);
+    color: #fff;
+}
+
 #my-games {
     display: none;
 }
@@ -1068,7 +1077,6 @@ input:focus {
 }
 
 .info-box {
-    gap: 16px;
     box-sizing: border-box;
     padding: 16px;
     background: var(--main-color);
@@ -1188,7 +1196,6 @@ p.infobox {
     display: -webkit-box;
     display: -ms-flexbox;
     display: grid;
-    gap: 16px;
     padding: 16px;
     border: var(--border);
     border-radius: var(--rad);
