@@ -1263,7 +1263,9 @@ p.infobox {
 }
 
 #outer-chat .gradient {
-    background: linear-gradient(0deg, rgba(7, 0, 59, 0.9), rgba(7, 0, 59, 0.7));
+    /* background: linear-gradient(0deg, rgba(7, 0, 59, 0.9), rgba(7, 0, 59, 0.7)); */
+    background: none;
+    padding: 24px;
 }
 
 /* #outer-chat .button-cta {
@@ -1538,15 +1540,21 @@ ul.list .title-column {
     transition: .2s;
     text-decoration: none;
     display: block;
-    color: var(--paragraph);
+    color: var(--paragraph-light);
     border-radius: 8px;
+    font-size: 14px;
     text-align: left;
 }
 
-.dropdown-content a#warning {
+.dropdown-content i {
+    margin-right: 4px;
+}
+
+a#warning {
     color: #FF6051;
 }
 
 .dropdown-content a:hover {
     background: var(--second-bg);
+    color: var(--paragraph);
 }
