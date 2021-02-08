@@ -19,7 +19,10 @@
 <body id="profile-settings">
     <div class="info-box">
         <div class="title">
-            <h4><i class="far fa-lightbulb" style="margin-right: 8px;"></i> info</h4>
+            <div class="inline">
+                <h4><i class="far fa-lightbulb" style="margin-right: 8px;"></i> info</h4>
+                <div class="hide-info"><i class="fas fa-times"></i></div>
+            </div>
             <p class="infobox">Each game has its unique swipe settings</p>
         </div>
     </div>
@@ -67,6 +70,22 @@
     </select>
     <hr>
 
+    <ul class="list communicators">
+        <li>
+            <p><i class="fas fa-handshake"></i> My new match</p>
+
+            <div class="switch" href="">
+                <div class="circle"></div>
+            </div>
+        </li>
+        <li>
+            <p><i class="fas fa-user-plus"></i> New people at this game</p>
+
+            <div class="switch switch-off" href="">
+                <div class="circle"></div>
+            </div>
+        </li>
+    </ul>
     </div>
 
     <script type="text/javascript ">
@@ -77,6 +96,10 @@
                 $('.is-visible').toggleClass('is-visible-yes');
 
             });
+        });
+
+        $(document).ready(function() {
+            $('hide-info:after').text(String('lol'));
         });
     </script>
 </body>
