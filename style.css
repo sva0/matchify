@@ -10,7 +10,8 @@
 :root {
     --main-color: #4E00FF;
     --rad: 8px;
-    --paragraph: #736B97;
+    --paragraph: #53497B;
+    --paragraph-light: #978EC1;
     --black: #1C182C;
     --black-text: #160A42;
     --box-shadow: 0px 8px 16px rgba(23, 0, 78, 0.144);
@@ -98,29 +99,11 @@ body.main-bg {
     border: none;
     -webkit-box-shadow: none;
     box-shadow: none;
+    color: var(--paragraph-light)
 }
 
 .search-bar i {
-    color: var(--main-color)
-}
-
-.dark h4 {
-    color: #fff;
-}
-
-.dark {
-    display: none;
-    background: var(--black);
-    color: var(--paragraph)
-}
-
-.dark input {
-    background: var(--black);
-}
-
-.dark .button-cta {
-    background: var(--black);
-    border-color: var(--paragraph);
+    color: var(--paragraph-light)
 }
 
 h1,
@@ -329,7 +312,7 @@ hr {
 }
 
 .top h2 {
-    font-size: 36px;
+    font-size: 30px;
 }
 
 .left .top .title,
@@ -363,8 +346,8 @@ hr {
 
 .dashboard,
 .explore {
-    display: grid;
-    grid-template-rows: 114px auto;
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
     position: relative;
     -ms-flex-item-align: stretch;
@@ -377,6 +360,16 @@ hr {
     border-radius: 16px;
     -webkit-box-shadow: var(--box-shadow);
     box-shadow: var(--box-shadow);
+}
+
+.dashboard .top,
+.explore .top,
+.contact .top {
+    margin-bottom: 16px;
+}
+
+.top #desktop-title {
+    color: var(--paragraph-light)
 }
 
 .explore .inside {
@@ -775,7 +768,7 @@ iframe {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    gap: 16px;
+    /* gap: 16px; */
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
@@ -811,7 +804,6 @@ iframe {
 
 .contact {
     padding: 24px;
-    gap: 16px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     z-index: 100;
@@ -822,8 +814,8 @@ iframe {
     -webkit-box-flex-grow: 1;
     -ms-flex-grow: 1;
     flex-grow: 1;
-    grid-template-rows: 98px auto;
-    display: grid;
+    flex-direction: column;
+    display:flex;
 }
 
 input::-webkit-input-placeholder {
@@ -1296,9 +1288,9 @@ iframe.profile-settings {
     width: 600px;
     box-sizing: border-box;
 }
-#notifi .special-settings h4 {
+/* #notifi .special-settings h4 {
     margin-left: 16px;
-}
+} */
 #notifi label {
     margin: 0;
 }
