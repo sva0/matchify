@@ -48,8 +48,6 @@
     .no-games-mobile {
         height: 60%;
         background-size: 700%;
-        background-position: -300px -500px;
-        background-position: -1100px -1100px;
     }
     .no-games-mobile .gradient#no-games {
         height: 100%;
@@ -151,6 +149,17 @@
     .mobile #my-games {
         height: 100%;
     }
+    
+.no-games-mobile img { 
+    display: block;
+    width: 80%;
+    align-self: center;
+
+}
+
+p#toggle-dashboard {
+    margin: 0;
+}
     .avatar-buttons {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;

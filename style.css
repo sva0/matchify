@@ -452,6 +452,7 @@ img.category-main {
 
 p#toggle-dashboard {
     line-height: 36px;
+    margin-top: 64px;
 }
 
 .no-games-mobile {
@@ -473,13 +474,20 @@ p#toggle-dashboard {
     box-sizing: border-box;
     background-size: 100%;
     background-position: center;
-    background-position: 100px -900px;
+    /* background-position: 100px -900px; */
     width: 100%;
     gap: 8px;
 }
 
 .no-games-mobile img {
-    height: 120px;
+    flex-grow: 1;
+    display: none;
+}
+
+.no-games-mobile h4,
+.no-games-mobile h2 {
+    flex-grow: 0;
+    color: #fff;
 }
 
 .no-games-mobile.card:hover {
@@ -490,7 +498,7 @@ p#toggle-dashboard {
 
 .no-games-mobile .gradient#no-games {
     width: auto;
-    height: 200px;
+    height: fit-content;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(40.82%, rgba(28, 24, 44, 0)), to(#1C182C));
     background: -o-linear-gradient(top, rgba(28, 24, 44, 0) 40.82%, #1C182C 100%);
     background: linear-gradient(180deg, rgba(28, 24, 44, 0) 40.82%, #1C182C 100%);
@@ -780,7 +788,7 @@ iframe {
     display: -ms-flexbox;
     display: grid;
     grid-template-rows: auto;
-    gap: 8px;
+    gap: 4px;
     -webkit-box-flex-grow: 2;
     -ms-flex-grow: 2;
     flex-grow: 2;
@@ -1155,17 +1163,18 @@ p.infobox {
 .special-settings {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    display: grid;
+    gap: 16px;
     padding: 16px;
-    border: 1px solid var(--hr);
+    border: var(--border);
     border-radius: var(--rad);
     -webkit-transition: .2s;
     -o-transition: .2s;
     transition: .2s;
+}
+
+.special-settings label {
+    margin: 0;
 }
 
 .isVisible {
