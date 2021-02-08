@@ -104,6 +104,11 @@
         -ms-flex-grow: 2;
         flex-grow: 2;
         padding: 16px;
+        box-sizing: border-box;
+    }
+
+    .profile-card {
+        width: calc(100% - 32px);
     }
     .mobile {
         padding: 16px;
@@ -158,8 +163,8 @@
     }
     #gamelist .card {
         width: auto;
-        background-size: 100%;
-        height: 180px;
+        background-size: auto 100%;
+        height: 200px;
     }
     #explore .card:hover,
     #gamelist .card:hover {

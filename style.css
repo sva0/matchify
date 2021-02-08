@@ -786,6 +786,12 @@ iframe {
     align-items: flex-start;
 }
 
+#no-games .title-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .right {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -968,6 +974,7 @@ ul.explorerlist li {
 .avatar img {
     margin-right: 16px;
     border-radius: 8px;
+    height: 100%;
 }
 
 #show-profile-settings,
@@ -1325,10 +1332,8 @@ iframe.profile-settings {
     -ms-flex-align: center;
     align-items: center;
 }
-.container .title-column {
-    margin-left: 16px;
-}
-.container hr {
+
+.container .title-column, .container hr {
     margin-left: 16px;
 }
 .inner-container {
@@ -1480,7 +1485,6 @@ img#profile-menu-pic {
     -ms-flex-item-align: stretch;
     -ms-grid-row-align: stretch;
     align-self: stretch;
-    grid-template-rows: 72px auto 104px;
 }
 #swiping .title {
     display: -webkit-box;
@@ -1501,6 +1505,9 @@ img#profile-menu-pic {
 }
 #swiping .title h4 {
     color: #fff;
+}
+#swiping .title span {
+    color: var(--paragraph-light)
 }
 
 /* .title .title-column {

@@ -93,3 +93,12 @@ span i {
     color: var(--black);
     font-weight: 600;
 }
+
+@media (max-width: 600px) {}
+
+.profile-card,
+.profile-card::after {
+    width: calc(100% - 32px);
+
+
+}
