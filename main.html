@@ -40,18 +40,6 @@
         </div>
     </div>
 
-    <!-- <div class="search-bar dark">
-        <div class="logo-top"><img src="images/logo-top.svg" style="height: 16px"  alt=""></div>
-        <h4>Matchify.gg</h4>
-        <i style="margin-left: 32px;" class="fas fa-search"></i>
-        <input type="text" value="Search...">
-        <div class="loggedas">
-            <img src="images/img.png" alt="">
-        </div>
-
-        <a href="" class="button-cta"><i class="fas fa-user-cog"></i></a>
-    </div> -->
-
 
     <div id="show-profile-settings" class="overlay-bg">
         <div id="settings-profile" class="container container-mobile">
@@ -466,7 +454,7 @@
                 $('.right, .explore').hide('fast');
                 $('.left').show('fast');
                 $('#dashboard-main').show('fast');
-                $('#dashboard-main').css('display', 'grid');
+                $('#dashboard-main').css('display', 'flex');
             });
         });
 
@@ -475,7 +463,7 @@
                 $('.right, #dashboard-main').hide('fast');
                 $('.left').show('fast');
                 $('.explore').show('fast');
-                $('.explore').css('display', 'grid');
+                $('.explore').css('display', 'flex');
             });
         });
 
@@ -483,7 +471,7 @@
             $('#go-contact').click(function() {
                 $('.explore, .left, #dashboard-main').hide('fast');
                 $('.right').show('fast');
-                $('.right').css('display', 'grid');
+                $('.right').css('display', 'flex');
                 $('.right').css('z-index', '10');
             });
         });

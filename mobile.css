@@ -25,15 +25,6 @@
         margin: 0;
         padding: 0;
     }
-    .explore .top,
-    .contact .top {
-        margin: 16px;
-    }
-    #chat-window,
-    #explore-list-main {
-        padding: 16px;
-        box-sizing: border-box;
-    }
     .genre h4,
     .genre i {
         font-size: 14px;
@@ -112,7 +103,7 @@
         -webkit-box-flex-grow: 2;
         -ms-flex-grow: 2;
         flex-grow: 2;
-        grid-template-rows: 86px auto;
+        padding: 16px;
     }
     .mobile {
         padding: 16px;
@@ -145,13 +136,6 @@
     }
     #my-games {
         display: none;
-    }
-    .contact {
-        width: 100%;
-        padding: 0px;
-        z-index: 8;
-        border-radius: 0;
-        gap: 0;
     }
     .loggedas {
         display: none;
