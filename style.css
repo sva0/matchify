@@ -7,6 +7,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
     --main-color: #4E00FF;
     --rad: 8px;
@@ -821,7 +822,7 @@ iframe {
     -ms-flex-grow: 1;
     flex-grow: 1;
     flex-direction: column;
-    display:flex;
+    display: flex;
 }
 
 input::-webkit-input-placeholder {
@@ -1019,6 +1020,7 @@ select:-webkit-autofill:focus {
     0% {
         -webkit-box-shadow: 0 0 0px 1000px #ffffff inset, 0px 0px 4px var(--main-color);
     }
+
     100% {
         -webkit-box-shadow: 0 0 0px 1000px #ffffff inset, -2px -2px -2px var(--main-color);
     }
@@ -1154,7 +1156,6 @@ p.infobox {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 24px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1178,10 +1179,12 @@ p.infobox {
 
 
 }
+
 .is-visible-yes {
     padding: 0;
     border: 0;
 }
+
 .special-settings .title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1190,7 +1193,9 @@ p.infobox {
     -ms-flex-pack: justify;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 16px;
 }
+
 #profile-settings,
 #contacts {
     display: grid;
@@ -1198,6 +1203,7 @@ p.infobox {
     gap: 24px;
     height: auto;
 }
+
 #contacts .card {
     width: auto;
     height: -webkit-fit-content;
@@ -1207,10 +1213,12 @@ p.infobox {
     padding: 0;
     border-radius: 8px;
 }
+
 .gradient h4 {
     color: #fff;
     line-height: 150%;
 }
+
 #contacts .gradient {
     width: auto;
     padding: 16px;
@@ -1221,10 +1229,12 @@ p.infobox {
     background: -o-linear-gradient(top, rgba(22, 10, 66, 0.5) 24.45%, #160A42 100%);
     background: linear-gradient(180deg, rgba(22, 10, 66, 0.5) 24.45%, #160A42 100%);
 }
+
 #outer-chat .gradient img {
     border-radius: 8px;
     height: 48px;
 }
+
 #outer-chat {
     z-index: 20;
     margin-right: 400px;
@@ -1236,13 +1246,15 @@ p.infobox {
     border-radius: 16px;
     background: #fff;
 }
+
 #outer-chat .card {
     width: 100%;
     height: fit-content;
     background-size: 100%;
 }
+
 #outer-chat .gradient {
-    background: linear-gradient( 0deg, rgba(7, 0, 59, 0.9), rgba(7, 0, 59, 0.7));
+    background: linear-gradient(0deg, rgba(7, 0, 59, 0.9), rgba(7, 0, 59, 0.7));
 }
 
 /* #outer-chat .button-cta {
@@ -1255,6 +1267,7 @@ iframe.chat {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 .type-message {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1264,11 +1277,13 @@ iframe.chat {
     -ms-flex-align: center;
     align-items: center;
 }
+
 .type-message input {
     -webkit-box-flex-grow: 2;
     -ms-flex-grow: 2;
     flex-grow: 2;
 }
+
 .overlay-bg {
     display: none;
     position: fixed;
@@ -1283,24 +1298,29 @@ iframe.chat {
     -ms-flex-pack: center;
     justify-content: center;
 }
+
 iframe.profile-settings {
     width: 600px;
     height: 100%;
 }
+
 #notifi {
     height: fit-content;
 }
+
 #notifi .inner-container {
     grid-template-rows: auto;
     width: 600px;
     box-sizing: border-box;
 }
+
 /* #notifi .special-settings h4 {
     margin-left: 16px;
 } */
 #notifi label {
     margin: 0;
 }
+
 .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1319,6 +1339,7 @@ iframe.profile-settings {
     -webkit-box-shadow: var(--box-shadow);
     box-shadow: var(--box-shadow);
 }
+
 .container .title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1333,9 +1354,13 @@ iframe.profile-settings {
     align-items: center;
 }
 
-.container .title-column, .container hr {
+.container .title-column,
+.container hr,
+.inner-container .title-column
+#swiping .title .title-column {
     margin-left: 16px;
 }
+
 .inner-container {
     background: #fff;
     padding: 24px;
@@ -1347,32 +1372,35 @@ iframe.profile-settings {
     box-shadow: 0px 8px 32px rgba(45, 58, 77, 0.24);
     height: 100%;
 }
+
 @-webkit-keyframes animatebg {
     0% {
         background-size: auto 100%;
     }
-    
+
     50% {
         background-size: auto 102%;
     }
-    
+
     100% {
         background-size: auto 100%;
     }
 }
+
 @keyframes animatebg {
     0% {
         background-size: auto 100%;
     }
-    
+
     50% {
         background-size: auto 102%;
     }
-    
+
     100% {
         background-size: auto 100%;
     }
 }
+
 .clear-flex {
     -webkit-box-flex-grow: 0;
     -ms-flex-grow: 0;
@@ -1388,36 +1416,43 @@ iframe.profile-settings {
     background-size: auto 100%;
     background-position: center;
 }
+
 #bfv {
     background: url('images/Battlefield-V-battle-royale.jpg');
     background-size: auto 100%;
     background-position: center;
 }
+
 #fifa {
     background: url('images/fifa.jfif');
     background-position: center;
     background-size: auto 100%;
 }
+
 #csgo {
     background: url('images/CSGO-Banner-24-3-2019.jpg');
     background-size: auto 100%;
     background-position: center;
 }
+
 #pokemon {
     background: url('images/pokemon.jpg');
     background-size: auto 100%;
     background-position: center;
 }
+
 #valorant {
     background: url('images/valorant.jpg');
     background-size: auto 100%;
     background-position: center;
 }
+
 #lol {
     background: url('images/image.jfif');
     background-size: auto 100%;
     background-position: center;
 }
+
 ul#menu {
     display: none;
     position: fixed;
@@ -1435,15 +1470,18 @@ ul#menu {
     z-index: 12;
     background: #fff;
 }
+
 ul#menu li {
     padding: 0;
     background: none;
     border: none;
     border-radius: var(--rad);
 }
+
 .menu-option {
     height: 14px;
 }
+
 img#profile-menu-pic {
     height: 32px;
 }
@@ -1459,12 +1497,15 @@ img#profile-menu-pic {
     background-size: auto 120%;
     background-position: center;
 }
+
 hr.short {
     width: 24px;
 }
+
 ul.list .title-column {
     gap: 2px;
 }
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -1477,9 +1518,11 @@ ul.list .title-column {
     transition: .2s;
     transform: translateX(calc(-100% + 42px));
 }
+
 #dropdown:hover .dropdown-content {
     display: block;
 }
+
 .dropdown-content a {
     float: none;
     padding: 16px;
@@ -1490,9 +1533,11 @@ ul.list .title-column {
     border-radius: 8px;
     text-align: left;
 }
+
 .dropdown-content a#warning {
     color: #FF6051;
 }
+
 .dropdown-content a:hover {
     background: var(--second-bg);
 }

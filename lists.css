@@ -89,6 +89,10 @@ li:nth-last-child(-n+1) {
     margin-right: 16px;
 }
 
+#show-game-settings .game-chat-img {
+    margin: 0;
+}
+
 .lists .title {
     display: grid;
     gap: 16px;
