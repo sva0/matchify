@@ -1204,6 +1204,10 @@ p.infobox {
     transition: .2s;
 }
 
+#profile-settings .special-settings {
+    gap: 16px
+}
+
 .special-settings label {
     margin: 0;
 }
