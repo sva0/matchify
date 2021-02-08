@@ -151,7 +151,7 @@
                         <h4>Game settings</h4>
                         <span id="if-visible">League of Legends</span>
                     </div>
-                    <a id="delete" class="button-cta"><i class="fas fa-trash-alt"></i></a>
+                    <a id="delete" onclick="ConfirmDelete()" class="button-cta"><i class="fas fa-trash-alt"></i></a>
                 </div>
                 <iframe class="profile-settings" src="game-settings.html"></iframe>
 
@@ -197,7 +197,7 @@
 
     </div>
     <div id="preview-chat-card" class="overlay-bg">
-        <div class="profile-card" id="chat-card" style="margin-right: 400px;">
+        <div class="profile-card" id="chat-card">
             <img id="profile-pic" src="images/profiles/Rectangle 15.png" alt="">
             <h4 id="name">sva<img class="lg-img" src="images/pl.svg" alt=""></h4>
 
@@ -224,6 +224,28 @@
             </div>
         </div>
     </div>
+
+    <div id="confirm-delete" class="overlay-bg">
+        <div class="confirm-box container-mobile">
+            <div class="title">
+                <a class="button-cta" style="margin-right: 16px;"><i class="fas fa-arrow-left"></i></a>
+                <div class="game-chat-img" id="lol"></div>
+
+                <div class="title-column">
+
+                    <h4>Game settings</h4>
+                    <span>League of Legends</span>
+                </div>
+            </div>
+            <h4>Are you sure you want to delete this game from your list?</h4>
+            <p>All your friends accurieq at this game are going to<br>be removed from your
+                <img src="images/menu/contacts-top.svg" style="margin:0 8px; height: 16px" alt="">Contacts</p>
+
+            <div class="inline"><a class="button"><i class="fas fa-check"></i> Yes, delete</a><a class="button-secondary"><i class="fas fa-times"></i> No, leave it </a></div>
+        </div>
+
+    </div>
+
     <div class="under-search">
         <div class="left">
 
@@ -571,6 +593,16 @@
             $('#preview-chat-card').css('display', 'flex');
 
             $('#preview-chat-card').click(function() {
+                $(this).fadeOut();
+            })
+        };
+    </script>
+    <script>
+        function ConfirmDelete() {
+            $('#confirm-delete').css('display', 'flex');
+
+            $('#confirm-delete').css('z-index', '23');
+            $('#confirm-delete').click(function() {
                 $(this).fadeOut();
             })
         };

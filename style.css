@@ -551,7 +551,7 @@ p#toggle-dashboard {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 4px;
+    gap: 8px;
 }
 
 span.span-special {
@@ -1169,6 +1169,26 @@ input:focus {
     border: none;
 }
 
+.confirm-box {
+    background: #fff;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: var(--box-shadow);
+    max-height: fit-content;
+    display: grid;
+    gap: 32px;
+}
+
+.confirm-box span {
+    color: var(--black-text);
+}
+
+.confirm-box .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 p.infobox {
     color: #fff;
 }
@@ -1204,6 +1224,10 @@ p.infobox {
     -webkit-transition: .2s;
     -o-transition: .2s;
     transition: .2s;
+}
+
+.special-settings p {
+    color: var(--paragraph-light)
 }
 
 #profile-settings .special-settings {

@@ -38,6 +38,10 @@
     background-position: center;
 }
 
+#chat-card {
+    margin-right: 400px;
+}
+
 .profile-card #profile-pic {
     align-self: center;
     z-index: 2;
@@ -175,10 +179,13 @@ span i {
 }
 
 @media (max-width: 600px) {
-    .profile-card {
+    /* .profile-card {
         width: 100%;
-    }
+    } */
     .profile-card::after {
         width: calc(100% - 32px);
+    }
+    #chat-card {
+        margin-right: 0;
     }
 }
