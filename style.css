@@ -24,6 +24,12 @@
     --box-shadow-container: 0px 8px 16px rgba(17, 17, 17, 0.04);
 }
 
+* {
+
+    
+    letter-spacing: 0.02em;
+}
+
 body,
 html {
     height: 100%;
@@ -127,6 +133,7 @@ h3,
 h4 {
     color: var(--black-text);
     font-weight: 700;
+    letter-spacing: 0.02em;
 }
 
 h2 {
@@ -263,7 +270,7 @@ p {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 150%;
     color: var(--paragraph);
     letter-spacing: 0.02em;
     margin: 0;
@@ -321,6 +328,11 @@ hr {
     font-size: 30px;
 }
 
+.top .top-mobile-search {
+    display: none;
+}
+
+
 .left .top .title,
 .contact .title,
 .explore .title {
@@ -350,6 +362,11 @@ hr {
     text-transform: uppercase;
 }
 
+i.container-title-icon {
+    margin-left: 16px;
+    color: var(--paragraph-light)
+}
+
 .dashboard,
 .explore {
     display: flex;
@@ -372,6 +389,11 @@ hr {
 .explore .top,
 .contact .top {
     margin-bottom: 16px;
+}
+
+#desktop-top-element {
+    font-size: 18px;
+    color: var(--main-color)
 }
 
 .top #desktop-title {
@@ -827,14 +849,14 @@ iframe {
     margin-left: 0;
     gap: 16px;
     min-width: 400px;
-    z-index: 10;
+    /* z-index: 10; */
 }
 
 .contact {
     padding: 24px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    z-index: 100;
+    /* z-index: 100; */
     border-radius: 16px;
     background: #fff;
     -webkit-box-shadow: var(--box-shadow);
@@ -1177,6 +1199,15 @@ input:focus {
     max-height: fit-content;
     display: grid;
     gap: 32px;
+}
+
+.confirm-box .card {
+    height: fit-content;
+    width: 100%;
+}
+
+.confirm-box .card i {
+    color: #fff;
 }
 
 .confirm-box span {
@@ -1537,6 +1568,7 @@ img#profile-menu-pic {
 }
 hr.short {
     width: 24px;
+    align-self: flex-start;
 }
 ul.list .title-column {
     gap: 2px;

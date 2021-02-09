@@ -40,6 +40,43 @@
 
 #chat-card {
     margin-right: 400px;
+    align-items: flex-end;
+}
+
+#preview-chat-card .hide-preview {
+    margin-right: 400px;
+    display: flex;
+    margin-bottom: 32px;
+    /* background: #fff; */
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.hide-preview span,
+.hide-preview i {
+    
+    color: #fff;
+}
+
+.exit-chat-card {
+    position: absolute;
+    background: #12073a38;
+    color: #fff;
+    display: flex;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    /* padding: 16px; */
+    z-index: 50;
+}
+.exit-chat-card i {
+    font-size: 11px;
+}
+
+#preview-chat-card {
+    flex-direction: column;
 }
 
 .profile-card #profile-pic {
@@ -60,8 +97,8 @@ img.lg-img {
     justify-content: space-between;
     gap: 4px;
     align-items: center;
+    width: 100%;
 }
-
 span i {
     color: var(--main-color);
 }
