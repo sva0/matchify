@@ -19,7 +19,7 @@
 </head>
 
 <body id="profile-settings">
-    <div class="info-box">
+    <div class="info-box" id="normal-info">
         <div class="title">
             <div class="inline">
                 <h4><i class="far fa-lightbulb" style="margin-right: 8px;"></i> info</h4>
@@ -110,7 +110,7 @@
     <script>
         $(document).ready(function() {
             $('.hide-info').click(function() {
-                $('.info-box').slideToggle('fast');
+                $('#normal-info').slideToggle('fast');
             });
 
         });
