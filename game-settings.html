@@ -106,4 +106,13 @@
             $('hide-info:after').text(String('lol'));
         });
     </script>
+
+    <script>
+        $(document).ready(function() {
+            $('.hide-info').click(function() {
+                $('.info-box').slideToggle('fast');
+            });
+
+        });
+    </script>
 </body>
