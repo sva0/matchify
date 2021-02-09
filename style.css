@@ -1199,6 +1199,8 @@ input:focus {
     max-height: fit-content;
     display: grid;
     gap: 32px;
+    width: 600px;
+    box-sizing: border-box;
 }
 
 .confirm-box .card {

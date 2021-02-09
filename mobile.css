@@ -54,7 +54,7 @@
     }
 
     .no-games-mobile {
-        height: 60%;
+        /* height: 60%; */
         background-size: 400%;
     }
 
@@ -126,8 +126,8 @@
         box-sizing: border-box;
     }
 
-    .profile-card {
-        width: calc(100% - 32px);
+  #swiping  .profile-card {
+        width: 100%;
     }
 
     .mobile {
