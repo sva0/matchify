@@ -1137,14 +1137,14 @@ input:focus {
     flex-direction: column;
 }
 
-.warning p,
+.special-settings .warning p,
 .warning h4 {
     color: #fFE8E6;
 }
 
 .warning {
     border-radius: var(--rad);
-    margin-top: 16px;
+    /* margin-top: 16px; */
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
