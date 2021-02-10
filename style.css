@@ -80,8 +80,10 @@ body.main-bg {
     box-sizing: border-box;
     max-height: -webkit-fit-content;
     max-height: -moz-fit-content;
+    position: fixed;
     max-height: fit-content;
-    margin: 24px;
+        margin: 24px;
+    width: calc(100% - 48px);
     margin-bottom: 0;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -297,9 +299,11 @@ hr {
     left: 0px;
     top: 0px;
     margin: 24px;
-    -webkit-box-flex-grow: 1;
+    
+    width: calc(100% - 464px);
+    /* -webkit-box-flex-grow: 1;
     -ms-flex-grow: 1;
-    flex-grow: 1;
+    flex-grow: 1; */
     gap: 16px;
 }
 
@@ -364,6 +368,9 @@ i.container-title-icon {
     color: var(--paragraph-light)
 }
 
+.dashboard {
+    margin-top: 110px;}
+
 .dashboard,
 .explore {
     display: flex;
@@ -412,11 +419,11 @@ i.container-title-icon {
     align-items: center;
 }
 
-.explore {
+/* .explore {
     -webkit-box-flex-grow: 2;
     -ms-flex-grow: 2;
     flex-grow: 2;
-}
+} */
 
 .explore input {
     -webkit-box-flex-grow: 1;
@@ -845,6 +852,10 @@ iframe {
     margin: 24px;
     margin-left: 0;
     gap: 16px;
+    position: fixed;
+    height: calc(100% - 158px);
+    right: 0;
+    /* margin-top: 110px; */
     min-width: 400px;
     /* z-index: 10; */
 }
@@ -948,7 +959,7 @@ ul {
 
 #explore-list-main {
     width: 100%;
-    height: 100%;
+    height: 2496px;
 }
 
 ul.explorerlist {
