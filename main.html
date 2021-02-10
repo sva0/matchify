@@ -178,9 +178,10 @@
                 <div id="dropdown">
                     <a class="button-cta"><i class="fas fa-bars"></i></a>
                     <div class="dropdown-content">
-                        <a><i class="fas fa-thumbs-down"></i> Report</a>
+                        <a onclick="reportContact()"><i class="fas fa-thumbs-down"></i> Report</a>
                         <a onclick="showChatCard()" id="show-chat-card"><i class="fas fa-eye"></i> Preview profile</a>
-                        <a id="warning"><i class="fas fa-trash-alt"></i> Delete contact</a>
+                        <a onclick="confirmDeleteContact()" id="warning"><i class="fas fa-trash-alt"></i> Delete
+                            contact</a>
                     </div>
                 </div>
             </div>
@@ -244,91 +245,101 @@
                 <p> got connected! GLHF</p>
             </div>
             <p>Do you want to get in touch with <b style="color: var(--black-text);">erWin</b>?</p>
-            <a class="button" id="take-me-to-chat" style="margin-top: 16px;"><i class="fas fa-comment"></i> Yes, take me to the chat</a>
+            <a class="button" id="take-me-to-chat" style="margin-top: 16px;"><i class="fas fa-comment"></i> Yes, take me
+                to the chat</a>
             <a class="button-secondary" id="back-to-swipe"><i class="fas fa-angle-double-left"></i> Back to swiping </a>
         </div>
 
-        <!--      <div class="confirm-box container-mobile ">
-            <div class="card" style="background-size: auto;" id="lol">
-                <div class="gradient">
-
-                    <div class="title">
-                        <div class="game-chat-img" id="lol"></div>
-                        <h4>League of Legends</h4>
-                        <a class="button-cta"><i class="fas fa-times"></i></a>
-                    </div>
-
-                </div>
-            </div> 
-
-        <img src="images/Group 1.svg" height="120px" style="justify-self: center;" alt="">
-            <img src="images/profiles/Rectangle 12.png" height="100px" style="justify-self: center; border-radius: 8px;">
-            <h2>Congrats!</h2>
-            <h4><i class="fas fa-handshake"></i> You and erWin got connected! GLHF</h4>
-            <p>All your friends acquired at this game are going to<br>be removed from your</p>
-            <div class="inline">
-                <p>Do you want to get in touch with</p>
-                <h4 style="flex-grow: 0;">erWin</h4>
-                <p>?</p>
-            </div>
-            <a class="button" style="margin-bottom: -16px;"><i class="fas fa-comment"></i> Yes, take me to chat</a>
-            <a class="button-secondary"><i class="fas fa-angle-double-right"></i> Back to swiping </a>
-        </div>-->
     </div>
 
     <div id="confirm-delete" class="overlay-bg">
-        <div class="confirm-box container-mobile">
-            <!-- <div class="title">
-                <div class="game-chat-img" id="lol"></div>
+        <div class="confirm-box container-mobile">i></a>
+        </div> -->
+        <div class="card" id="lol">
+            <div class="gradient">
+            </div>
+        </div>
+        <h3>League of Legends</h3>
+        <hr class="short">
+        <h4>Are you sure you want to delete this game from your list?</h4>
+        <p>All your friends acquired at this game are going to be removed <br>from your
+            <span style="font-size: 14px; text-transform: capitalize;"><i style="color: var(--main-color)"
+                        class="fas fa-comment"></i> Contacts</span>
+        </p>
 
-                <div class="title-column">
+        <p>If are not decided, then we suggest to turn off the notifications first </p>
+        <!-- <br><br><a class="button-secondary" style="background: none; border: var(--border)" onclick="editnotifications()"><i class="fas fa-bell"></i> Notifications</a> -->
 
-                    <h4>League of Legends</h4>
+        <ul class="list communicators">
+            <li>
+                <p><i class="fas fa-handshake"></i> My new match</p>
+
+                <div class="switch" href="">
+                    <div class="circle"></div>
                 </div>
-                <a class="button-cta"><i class="fas fa-times"></i></a>
-            </div> -->
-            <div class="card" style="background-size: auto;" id="lol">
-                <div class="gradient">
+            </li>
+            <li>
+                <p><i class="fas fa-user-plus"></i> New people at this game</p>
 
-                    <div class="title">
-                        <div class="game-chat-img" id="lol"></div>
-                        <h4>League of Legends</h4>
-                        <a class="button-cta"><i class="fas fa-times"></i></a>
-                    </div>
+                <div class="switch switch-off" href="">
+                    <div class="circle"></div>
+                </div>
+            </li>
+        </ul>
 
+
+        <div class="inline"><a class="button-secondary"><i class="fas fa-trash-alt"></i> Yes, delete</a><a class="button"><i class="fas fa-times"></i> No, leave it for now</a></div>
+    </div>
+
+    </div>
+
+
+
+    <div id="confirm-delete-contact" class="overlay-bg">
+        <div class="confirm-box profile-card" id="delete-contact" style="height: fit-content;">
+            <div class="exit-chat-card"><i class="fas fa-times"></i></div>
+            <div id="profile-pic" class="delete-contact"></div>
+            <h4>Do you really want to disconnect?</h4>
+            <p>Are you sure that you don't want to have</p>
+            <div class="inline">
+                <img src="images/profiles/Rectangle 15.png" height="48px" style="margin-left: 16px;" alt="">
+                <div class="title-column">
+                    <h4>sva-iwnl-</h4>
+                    <span>@Valorant</span>
                 </div>
             </div>
-            <h4>Are you sure you want to delete this game from your list?</h4>
-            <p>All your friends acquired at this game are going to<br>be removed from your
+            <p>in your contacts no more?</p>
 
-                <span style="font-size: 14px; text-transform: capitalize;"><i style="color: var(--main-color)" class="fas fa-comment"></i> Contacts</span>
-            </p>
+            <div class="inline"><a class="button-secondary"><i class="fas fa-trash-alt"></i> Yes, delete</a><a class="button"><i class="fas fa-times"></i> No, leave it for now</a></div>
 
-            <p>If are not decided, then we suggest to turn off the notifications first </p>
-            <!-- <br><br><a class="button-secondary" style="background: none; border: var(--border)" onclick="editnotifications()"><i class="fas fa-bell"></i> Notifications</a> -->
-
-            <ul class="list communicators">
-                <li>
-                    <p><i class="fas fa-handshake"></i> My new match</p>
-
-                    <div class="switch" href="">
-                        <div class="circle"></div>
-                    </div>
-                </li>
-                <li>
-                    <p><i class="fas fa-user-plus"></i> New people at this game</p>
-
-                    <div class="switch switch-off" href="">
-                        <div class="circle"></div>
-                    </div>
-                </li>
-            </ul>
-
-
-            <div class="inline"><a class="button"><i class="fas fa-trash-alt"></i> Yes, delete</a><a class="button-secondary"><i class="fas fa-times"></i> No, leave it </a></div>
         </div>
 
     </div>
+
+    <div id="report-contact" class="overlay-bg">
+        <div class="confirm-box profile-card" id="report-contact" style="height: fit-content;">
+            <div class="exit-chat-card"><i class="fas fa-times"></i></div>
+            <div id="profile-pic" class="report-contact"></div>
+            <h4>Report process</h4>
+            <p>Please tell us the reason of the report</p>
+            <div class="inline checkbox-w-title">
+                <input type="checkbox" id="scales" name="scales" checked></ <p>reason 1</p>
+            </div>
+            <div class="inline checkbox-w-title">
+                <input type="checkbox" id="scales" name="scales" checked></ <p>reason 1</p>
+            </div>
+            <div class="inline checkbox-w-title">
+                <input type="checkbox" id="scales" name="scales" checked></ <p>reason 1</p>
+            </div>
+            <textarea type="text" id="lname" placeholder="Describe it more..." name="lname"></textarea>
+
+            <div class="inline"><a class="button"><i class="fas fa-paper-plane"></i> Send the report</a><a class="button-secondary"><i class="fas fa-times"></i> Cancel</a></div>
+
+        </div>
+
+    </div>
+
+
 
     <div class="under-search">
         <div class="left">
@@ -336,11 +347,8 @@
             <div class="dashboard mobile" id="dashboard-main">
                 <div class="top">
                     <div class="title-column">
-                        <!-- <img src="images/h-w.svg" class="category-main" alt=""> -->
-                        <!-- <div class="inline"> -->
                         <i id="desktop-top-element" class="fas fa-grip-horizontal"></i>
                         <h2 id="goswipe">Dashboard</h2>
-                        <!-- </div> -->
                         <p id="desktop-title">Games are sorted by your activity</p>
                         <hr class="short">
                     </div>
@@ -569,7 +577,7 @@
             $('.exit-swipe').click(function() {
                 $('#swiping').fadeOut('fast');
                 $('.light').css('display', 'flex');
-                $('#dashboard-main, .explore').css('display', 'grid');
+                $('#dashboard-main, .explore').css('display', 'flex');
                 $('.swipe-big, .dark').hide('fast');
                 $('body').toggleClass('swipe-bg');
                 $('body').toggleClass('main-bg');
@@ -694,7 +702,7 @@
 
         $(document).ready(function() {
             $('#toggle-dashboard').click(function() {
-                $('.dashboard').css('display', 'grid');
+                $('.dashboard').css('display', 'flex');
                 $('.no-games').hide('slow');
             });
         });
@@ -710,8 +718,10 @@
                 $('.overlay-bg').fadeOut();
             })
         };
-    </script>
-    <script>
+
+
+
+
         function showChatCard() {
             $('#preview-chat-card').css('display', 'flex');
 
@@ -719,8 +729,10 @@
                 $('#preview-chat-card').fadeOut();
             })
         };
-    </script>
-    <script>
+
+
+
+
         function ConfirmDelete() {
             $('#confirm-delete').css('display', 'flex');
 
@@ -729,9 +741,30 @@
                 $(this).fadeOut();
             })
         };
-    </script>
 
-    <script>
+
+
+
+        function confirmDeleteContact() {
+            $('#confirm-delete-contact').css('display', 'flex');
+
+            $('#confirm-delete-contact').css('z-index', '23');
+            $('#confirm-delete-contact').click(function() {
+                $(this).fadeOut();
+            })
+        };
+
+        function reportContact() {
+            $('#report-contact').css('display', 'flex');
+
+            $('#report-contact').css('z-index', '23');
+            $('#report-contact').click(function() {
+                $(this).fadeOut();
+            })
+        };
+
+
+
         $(document).ready(function() {
             $('.top-mobile-search').click(function() {
                 $(this).toggleClass('mobile-search-bar');
@@ -739,8 +772,10 @@
             });
 
         });
-    </script>
-    <script>
+
+
+
+
         $(document).ready(function() {
             $('.voteYes').click(function() {
                 $('#swipe-connected').css('display', 'flex');

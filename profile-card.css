@@ -9,7 +9,7 @@
     height: 480px;
     width: 343px;
     background: #fff;
-    border-radius: 32px 32px 16px 16px;
+    border-radius: 17px 17px 16px 16px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -38,12 +38,32 @@
     background-position: center;
 }
 
-#chat-card {
+#delete-contact.profile-card::after,
+#report-contact.profile-card::after {
+    background: url('images/valorant.jpg');
+    background-size: 110%;
+    background-position: center;
+    width: 600px;
+    margin: -24px;
+}
+
+#chat-card,
+#delete-contact,
+#report-contact {
     margin-right: 400px;
     /* align-items: flex-end; */
 }
 
-.swipe-yes {
+#delete-contact.profile-card,
+#report-contact.profile-card {
+    width: 600px;
+    gap: 32px;
+    padding: 24px;
+}
+
+.swipe-yes,
+.delete-contact,
+.report-contact {
     display: block;
     background: url('images/profiles/Rectangle 15.png');
     background-size: 100%;
@@ -54,6 +74,30 @@
     position: absolute;
     width: 200px;
     background: #4c00ff9c;
+    height: 200px;
+    box-sizing: border-box;
+    padding: 64px;
+    display: block;
+    border-radius: 8px;
+}
+
+.delete-contact::before {
+    content: url('images/times.svg');
+    position: absolute;
+    width: 200px;
+    background: #ff60517e;
+    height: 200px;
+    box-sizing: border-box;
+    padding: 64px;
+    display: block;
+    border-radius: 8px;
+}
+
+.report-contact::before {
+    content: url('images/report.svg');
+    position: absolute;
+    width: 200px;
+    background: #ff60517e;
     height: 200px;
     box-sizing: border-box;
     padding: 64px;
@@ -231,6 +275,12 @@ span i {
     background: #09ECA7;
 }
 
+.confirm-box .button-secondary,
+.confirm-box .button {
+    flex-grow: 1;
+    width: 50%;
+}
+
 .voteNo {
     background: #F05652;
 }
@@ -245,6 +295,21 @@ span i {
 
 #swipe-connected {
     background: #4c00ff9c;
+}
+
+#confirm-delete .button-secondary,
+#confirm-delete-contact .button-secondary,
+#report-contact .button-secondary {
+    background: none;
+    color: var(--paragraph);
+}
+
+#report-contact .button-secondary:hover,
+#confirm-delete .button-secondary:hover,
+#confirm-delete-contact .button-secondary:hover {
+    /* background: var(--second-bg); */
+    color: #FF6051;
+    background: #fFE8E6;
 }
 
 @keyframes animatedglow-yes {

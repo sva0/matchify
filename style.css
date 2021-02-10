@@ -1043,6 +1043,20 @@ textarea {
     line-height: 14px;
 }
 
+input#scales {
+    border: none;
+    background: none;
+    margin: 0;
+    box-shadow: none;
+    height: auto;
+    align-self: center;
+    padding: 0;
+}
+
+.checkbox-w-title {
+    margin-bottom: -16px;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -1201,12 +1215,21 @@ input:focus {
 }
 
 .confirm-box .gradient {
-    background: linear-gradient( 180deg, rgba(22, 10, 66, 0) 0%, #160A42 100%);
+    background: none;
+    border-radius: 16px;
+    height: 140px;
 }
 
 .confirm-box .card {
     height: fit-content;
-    width: 100%;
+    width: calc(100% + 48px);
+    margin: -24px;
+    margin-bottom: 0;
+    border-radius: 16px;
+}
+
+.confirm-box #lol {
+    background-size: 100%;
 }
 
 .confirm-box .card i {
@@ -1260,9 +1283,10 @@ p.infobox {
     transition: .2s;
 }
 
-.special-settings p {
+
+/* .special-settings p {
     color: var(--paragraph-light)
-}
+} */
 
 #profile-settings .special-settings {
     gap: 16px
@@ -1588,6 +1612,9 @@ ul.list .title-column {
     transition: .2s;
     transform: translateX(calc(-100% + 42px));
 }
+.dropdown-content hr {
+    margin: 8px;
+}
 #dropdown:hover .dropdown-content {
     display: block;
 }
@@ -1609,6 +1636,9 @@ ul.list .title-column {
 a#warning,
 #warning i {
     color: #FF6051;
+}
+a#warning:hover {
+    background: #fFE8E6;
 }
 .dropdown-content a:hover {
     background: var(--second-bg);
