@@ -1597,18 +1597,20 @@ ul.list .title-column {
     transition: .2s;
     text-decoration: none;
     display: block;
-    color: var(--paragraph-light);
+    color: var(--paragraph);
     border-radius: 8px;
     font-size: 14px;
     text-align: left;
 }
 .dropdown-content i {
     margin-right: 4px;
+    color: var(--paragraph-light)
 }
-a#warning {
+a#warning,
+#warning i {
     color: #FF6051;
 }
 .dropdown-content a:hover {
     background: var(--second-bg);
-    color: var(--paragraph);
+    color: var(--black-text);
 }
