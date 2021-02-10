@@ -1,324 +1,296 @@
-/*
+                /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v7.0.29,
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
-
-@media (max-width: 600px) {
-    ul#menu {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        z-index: 10;
-    }
-
-    .search-bar {
-        display: none;
-        visibility: hidden;
-    }
-
-    #fullscreen {
-        display: none;
-    }
-
-    .explore,
-    .right {
-        display: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    .genre h4,
-    .genre i {
-        font-size: 14px;
-        color: var(--input-title-c);
-    }
-
-    .dark-bg-over {
-        background: #2D274380;
-        z-index: 10;
-        display: none;
-        width: 2000px;
-        height: 2000px;
-        position: fixed;
-    }
-
-    #settings-button-container {
-        margin: -16px;
-        padding: 16px;
-    }
-
-    #notifi .inner-container {
-        width: 100%;
-    }
-
-    .no-games-mobile {
-        /* height: 60%; */
-        background-size: 400%;
-    }
-
-    .no-games-mobile .gradient#no-games {
-        height: 100%;
-    }
-
-    .overlay-bg {
-        z-index: 22;
-    }
-
-    .button-delete {
-        margin-top: 16px;
-    }
-
-    #explore.card,
-    #dashboard.card {
-        min-height: 150px;
-    }
-
-    #show-chat-window {
-        z-index: 21;
-    }
-
-    #outer-chat {
-        margin: 0;
-        padding: 16px;
-        border-radius: 0;
-        height: 100%;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-
-    #outer-chat:before {
-        border-radius: 0;
-        margin: -16px;
-    }
-
-    .container {
-        height: calc(100% - 16px);
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-
-    .info-box {
-        grid-template-columns: auto;
-    }
-
-    hr.short {
-        width: 24px;
-        display: block;
-    }
-
-    iframe.chat {
-        width: 100%;
-    }
-
-    #desktop-title {
-        display: none;
-    }
-
-    .mobile,
-    .explore,
-    .contact {
-        -webkit-box-flex-grow: 2;
-        -ms-flex-grow: 2;
-        flex-grow: 2;
-        padding: 16px;
-        box-sizing: border-box;
-    }
-
-  #swiping  .profile-card {
-        width: 100%;
-    }
-
-    .mobile {
-        padding: 16px;
-    }
-
-    .gradient .dashboard iframe {
-        -webkit-box-flex-grow: 2;
-        -ms-flex-grow: 2;
-        flex-grow: 2;
-    }
-
-    .left {
-        margin: 0;
-    }
-
-    .right {
-        min-width: 100%;
-    }
-
-    .container-mobile {
-        width: 100%;
-        margin: 8px;
-    }
-
-    .inner-container {
-        padding: 16px;
-        z-index: 10;
-    }
-
-    .no-games {
-        height: 100%;
-        display: none;
-    }
-
-    iframe.profile-settings {
-        width: 100%;
-    }
-
-    #my-games {
-        display: none;
-    }
-
-    .loggedas {
-        display: none;
-    }
-
-    .explorerlist iframe {
-        height: 192px;
-    }
-
-    .mobile #my-games {
-        height: 100%;
-    }
-
-    .no-games-mobile img {
-        display: block;
-        width: 80%;
-        align-self: center;
-    }
-
-    p#toggle-dashboard {
-        margin: 0;
-    }
-
-    .avatar-buttons {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .dashboard-list {
-        grid-auto-flow: row;
-    }
-
-    #gamelist .card {
-        width: auto;
-        background-size: auto 100%;
-        height: 200px;
-    }
-
-    #explore .card:hover,
-    #gamelist .card:hover {
-        background-size: 105%;
-    }
-
-    .genre {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        height: -webkit-fit-content;
-        height: -moz-fit-content;
-        height: fit-content;
-        width: -webkit-fill-available;
-    }
-
-    #explore .card {
-        width: 120px;
-        background-size: auto 100%;
-    }
-
-    #explore .card:hover {
-        background-size: auto 105%;
-    }
-
-    #explore .gradient h4 {
-        font-size: 12px;
-    }
-
-    ul.explorerlist li {
-        border-radius: 8px;
-    }
-
-    #explore iframe {
-        height: 190px;
-    }
-
-    #explore .lists {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-    }
-
-    #login {
-        background-size: 100%;
-        display: grid;
-        height: 100%;
-    }
-
-    #login .clear-flex {
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        width: calc(100% - 32px);
-        margin: 16px;
-    }
-
-    #login::before {
-        width: calc(100% + 64px);
-        margin: -16px;
-        filter: none;
-    }
-
-    .SameHeightLogin {
-        display: grid;
-        grid-template-columns: auto;
-        gap:
-    }
-
-    .top .top-mobile-search {
-        /* box-shadow: var(--box-shadow); */
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .top-mobile-search:hover {
-        background: #fff;
-    }
-
-    .mobile-search-bar {
-        width: calc(100% - 32px);
-        background: #fff;
-        position: absolute;
-        height: 52px;
-        border: 1px solid #D9D3E6;
-        -webkit-box-shadow: 0px 2px 0px rgb(28 24 44 / 8%);
-        box-shadow: 0px 2px 0px rgb(28 24 44 / 8%);
-        z-index: 25;
-    }
-
-    .mobile-search-overlay {
-        display: none;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: 24;
-        margin: 0 -16px;
-        background: #07003B99;
-        top: 0;
-    }
-
-    .search-text {
-        display: none;
-        margin-left: 8px;
-    }
-
-    .top-mobile-search i {
-        font-size: 16px;
-        color: var(--paragraph)
-    }
-}
+                
+                @media (max-width: 600px) {
+                    ul#menu {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        z-index: 10;
+                    }
+                    .search-bar {
+                        display: none;
+                        visibility: hidden;
+                    }
+                    #fullscreen {
+                        display: none;
+                    }
+                    .explore,
+                    .right {
+                        display: none;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    .genre h4,
+                    .genre i {
+                        font-size: 14px;
+                        color: var(--input-title-c);
+                    }
+                    .dark-bg-over {
+                        background: #2D274380;
+                        z-index: 10;
+                        display: none;
+                        width: 2000px;
+                        height: 2000px;
+                        position: fixed;
+                    }
+                    #settings-button-container {
+                        margin: -16px;
+                        padding: 16px;
+                    }
+                    #notifi .inner-container {
+                        width: 100%;
+                    }
+                    .no-games-mobile {
+                        /* height: 60%; */
+                        background-size: 400%;
+                    }
+                    .no-games-mobile .gradient#no-games {
+                        height: 100%;
+                    }
+                    .overlay-bg {
+                        z-index: 22;
+                    }
+                    .button-delete {
+                        margin-top: 16px;
+                    }
+                    #explore.card,
+                    #dashboard.card {
+                        min-height: 150px;
+                    }
+                    #show-chat-window {
+                        z-index: 21;
+                    }
+                    #outer-chat {
+                        margin: 0;
+                        padding: 16px;
+                        border-radius: 0;
+                        height: 100%;
+                        -webkit-box-sizing: border-box;
+                        box-sizing: border-box;
+                    }
+                    #outer-chat:before {
+                        border-radius: 0;
+                        margin: -16px;
+                    }
+                    .container {
+                        height: calc(100% - 16px);
+                        -webkit-box-sizing: border-box;
+                        box-sizing: border-box;
+                    }
+                    .info-box {
+                        grid-template-columns: auto;
+                    }
+                    hr.short {
+                        width: 24px;
+                        display: block;
+                    }
+                    iframe.chat {
+                        width: 100%;
+                    }
+                    #desktop-title {
+                        display: none;
+                    }
+                    .mobile,
+                    .explore,
+                    .contact {
+                        -webkit-box-flex-grow: 2;
+                        -ms-flex-grow: 2;
+                        flex-grow: 2;
+                        padding: 16px;
+                        box-sizing: border-box;
+                    }
+                    #swiping .profile-card {
+                        width: 100%;
+                    }
+                    .mobile {
+                        padding: 16px;
+                    }
+                    .gradient .dashboard iframe {
+                        -webkit-box-flex-grow: 2;
+                        -ms-flex-grow: 2;
+                        flex-grow: 2;
+                    }
+                    .left {
+                        margin: 0;
+                    }
+                    .right {
+                        min-width: 100%;
+                    }
+                    .container-mobile {
+                        width: 100%;
+                        margin: 8px;
+                    }
+                    .inner-container {
+                        padding: 16px;
+                        z-index: 10;
+                    }
+                    .no-games {
+                        height: 100%;
+                        display: none;
+                    }
+                    iframe.profile-settings {
+                        width: 100%;
+                    }
+                    #my-games {
+                        display: none;
+                    }
+                    .loggedas {
+                        display: none;
+                    }
+                    .explorerlist iframe {
+                        height: 192px;
+                    }
+                    .mobile #my-games {
+                        height: 100%;
+                    }
+                    .no-games-mobile img {
+                        display: block;
+                        width: 80%;
+                        align-self: center;
+                    }
+                    p#toggle-dashboard {
+                        margin: 0;
+                    }
+                    .avatar-buttons {
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                        flex-direction: column;
+                        gap: 0;
+                    }
+                    .dashboard-list {
+                        grid-auto-flow: row;
+                    }
+                    #gamelist .card {
+                        width: auto;
+                        background-size: auto 100%;
+                        height: 200px;
+                    }
+                    #explore .card:hover,
+                    #gamelist .card:hover {
+                        background-size: 105%;
+                    }
+                    .genre {
+                        -webkit-box-orient: horizontal;
+                        -webkit-box-direction: normal;
+                        -ms-flex-direction: row;
+                        flex-direction: row;
+                        height: -webkit-fit-content;
+                        height: -moz-fit-content;
+                        height: fit-content;
+                        width: -webkit-fill-available;
+                    }
+                    #explore .card {
+                        width: 120px;
+                        background-size: auto 100%;
+                    }
+                    #explore .card:hover {
+                        background-size: auto 105%;
+                    }
+                    #explore .gradient h4 {
+                        font-size: 12px;
+                    }
+                    ul.explorerlist li {
+                        border-radius: 8px;
+                    }
+                    #explore iframe {
+                        height: 190px;
+                    }
+                    #explore .lists {
+                        -webkit-box-orient: horizontal;
+                        -webkit-box-direction: normal;
+                        -ms-flex-direction: row;
+                        flex-direction: row;
+                    }
+                    #login {
+                        background-size: 100%;
+                        display: grid;
+                        height: 100%;
+                    }
+                    #login .clear-flex {
+                        -webkit-box-sizing: border-box;
+                        box-sizing: border-box;
+                        width: calc(100% - 32px);
+                        margin: 16px;
+                    }
+                    #login::before {
+                        width: calc(100% + 64px);
+                        margin: -16px;
+                        filter: none;
+                    }
+                    .SameHeightLogin {
+                        display: grid;
+                        grid-template-columns: auto;
+                        gap:
+                    }
+                    .top .top-mobile-search {
+                        /* box-shadow: var(--box-shadow); */
+                        display: flex;
+                        justify-content: flex-start;
+                    }
+                    .top-mobile-search:hover {
+                        background: #fff;
+                    }
+                    .mobile-search-bar {
+                        width: calc(100% - 32px);
+                        background: #fff;
+                        position: absolute;
+                        height: 52px;
+                        border: 1px solid #D9D3E6;
+                        -webkit-box-shadow: 0px 2px 0px rgb(28 24 44 / 8%);
+                        box-shadow: 0px 2px 0px rgb(28 24 44 / 8%);
+                        z-index: 25;
+                    }
+                    .mobile-search-overlay {
+                        display: none;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 24;
+                        margin: 0 -16px;
+                        background: #07003B99;
+                        top: 0;
+                    }
+                    .search-text {
+                        display: none;
+                        margin-left: 8px;
+                    }
+                    .top-mobile-search i {
+                        font-size: 16px;
+                        color: var(--paragraph)
+                    }
+                    .confirm-box {
+                        gap: 16px;
+                    }
+                    .confirm-box .buttons {
+                        flex-direction: column;
+                    }
+                    .confirm-box .inline .button,
+                    .confirm-box .inline .button-secondary {
+                        width: auto;
+                    }
+                    .confirm-box .gradient {
+                        height: 80px;
+                    }
+                    #delete-contact.profile-card::after,
+                    #report-contact.profile-card::after {
+                        width: calc(100% - 32px);
+                        margin: -16px;
+                    }
+                    #delete-contact.profile-card,
+                    #report-contact.profile-card {
+                        width: calc(100% - 32px);
+                        padding: 16px;
+                        gap: 16px;
+                    }
+                    #chat-card,
+                    #delete-contact,
+                    #report-contact {
+                        margin-right: 0;
+                    }
+                }

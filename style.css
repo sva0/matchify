@@ -571,6 +571,7 @@ p#toggle-dashboard {
     display: -ms-flexbox;
     display: flex;
     gap: 8px;
+    width: 100%;
 }
 
 span.span-special {
@@ -1120,7 +1121,7 @@ input:focus {
     align-items: center;
 }
 
-.info-box .inline {
+.info .info-box .inline {
     display: grid;
     justify-content: space-between;
     width: 100%;
@@ -1246,7 +1247,7 @@ input:focus {
     align-items: center;
 }
 
-p.infobox {
+.info-box p {
     color: #fff;
 }
 
