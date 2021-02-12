@@ -226,7 +226,6 @@
                     .SameHeightLogin {
                         display: grid;
                         grid-template-columns: auto;
-                        gap:
                     }
                     .top .top-mobile-search {
                         /* box-shadow: var(--box-shadow); */

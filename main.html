@@ -38,8 +38,7 @@
 
                 <div style="align-items: center;" class="inline">👋
                     <p>Hi there, </p>
-                    <span style="display: flex; align-items: center;box-shadow: none; gap: 8px; padding: 0;"
-                        class="span-special">sova-iwnl-
+                    <span style="display: flex; align-items: center;box-shadow: none; gap: 8px; padding: 0;" class="span-special">sova-iwnl-
                         <img src="images/profiles/Rectangle 14.png" alt=""></span>
                     <a class="button-cta"><i class="fas fa-user-cog"></i></a></div>
             </div>
@@ -80,8 +79,7 @@
             <div class="inner-container">
 
                 <div class="title">
-                    <a id="exit" class="button-cta"><i class="fas fa-arrow-left"></i></a><i
-                        class="container-title-icon fas fa-bell"></i>
+                    <a id="exit" class="button-cta"><i class="fas fa-arrow-left"></i></a><i class="container-title-icon fas fa-bell"></i>
                     <div class="title-column">
                         <h4>Notifications</h4>
 
@@ -230,8 +228,7 @@
 
             <div class="details-box">
                 <span><i class="fas fa-quote-right"></i> profile description</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             </div>
         </div>
     </div>
@@ -309,8 +306,7 @@
                 <span style="font-size: 14px; text-transform: capitalize;"><i style="color: var(--main-color)"
                         class="fas fa-comment"></i> Contacts</span>
             </p>
-
-            <p>If are not decided, then we suggest to turn off the notifications or your visibility first </p>
+            <p>If are not decided, then we suggest to turn off the notifications or your visibility first. By doing that you will keep all the contacts at this game.</p>
             <!-- <br><br><a class="button-secondary" style="background: none; border: var(--border)" onclick="editnotifications()"><i class="fas fa-bell"></i> Notifications</a> -->
             <div class="special-settings isVisible">
                 <div class="title">
@@ -339,8 +335,7 @@
             </ul>
 
 
-            <div class="inline buttons"><a class="button-secondary"><i class="fas fa-trash-alt"></i> Yes, delete</a><a
-                    class="button"><i class="fas fa-times"></i> No, leave it for now</a></div>
+            <div class="inline buttons"><a class="button-secondary"><i class="fas fa-trash-alt"></i> Yes, delete</a><a class="button"><i class="fas fa-times"></i> No, leave it for now</a></div>
         </div>
 
     </div>
@@ -362,8 +357,7 @@
             </div>
             <p>in your contacts no more?</p>
 
-            <div class="inline buttons"><a class="button-secondary"><i class="fas fa-trash-alt"></i> Yes, delete</a><a
-                    class="button"><i class="fas fa-times"></i> No, leave it for now</a></div>
+            <div class="inline buttons"><a class="button-secondary"><i class="fas fa-trash-alt"></i> Yes, delete</a><a class="button"><i class="fas fa-times"></i> No, leave it for now</a></div>
 
         </div>
 
@@ -469,8 +463,7 @@
                         <p class="search-text">Search for a game...</p>
                     </div>
                 </div>
-                <iframe src="explore-outside.html" id="explore-list-main"
-                    style="width:100%;border:none;overflow:hidden;flex: 2;"></iframe>
+                <iframe src="explore-outside.html" id="explore-list-main" style="width:100%;border:none;overflow:hidden;flex: 2;"></iframe>
             </div>
 
 
@@ -516,8 +509,7 @@
 
                         <div class="details-box">
                             <span><i class="fas fa-quote-right"></i> profile description</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                         </div>
                     </div>
 
@@ -557,8 +549,7 @@
 
                 </div>
 
-                <iframe id="chat-window" src="contacts.html"
-                    style="height:100%;width:100%;border:none;overflow:hidden;"></iframe>
+                <iframe id="chat-window" src="contacts.html" style="height:100%;width:100%;border:none;overflow:hidden;"></iframe>
 
             </div>
 
@@ -583,8 +574,8 @@
     </div>
 
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('.search').on('click', function () {
+        $(document).ready(function() {
+            $('.search').on('click', function() {
                 $(this).toggleClass('search');
                 $(this).toggleClass('search-active');
                 $('.dark-bg-over').toggle();
@@ -596,9 +587,9 @@
 
         /* FULLSCREEN START */
 
-        $(document).ready(function () {
+        $(document).ready(function() {
 
-            $('#fullscreen').click(function () {
+            $('#fullscreen').click(function() {
 
                 $(this).toggleClass('button-delete');
 
@@ -631,8 +622,8 @@
         /* GO SWIPE */
 
 
-        $(document).ready(function () {
-            $('#goswipe').click(function () {
+        $(document).ready(function() {
+            $('#goswipe').click(function() {
                 $('#dashboard-main, .explore, .light').hide('fast');
                 $('#swiping').css('display', 'flex');
                 $('.swipe-big').show('fast');
@@ -647,11 +638,11 @@
         });
 
 
-        $(document).ready(function () {
-            $('.exit-swipe').click(function () {
+        $(document).ready(function() {
+            $('.exit-swipe').click(function() {
                 if ($(window).width() <= 600) {
 
-                    $('#menu').css('display','flex');
+                    $('#menu').css('display', 'flex');
                     $('.light').hide();
                     $('#dashboard-main').css('display', 'flex');
                     $('#swiping').fadeOut('fast');
@@ -676,8 +667,8 @@
 
 
 
-        $(document).ready(function () {
-            $('.switch').click(function () {
+        $(document).ready(function() {
+            $('.switch').click(function() {
                 $(this).toggleClass('switch-off');
             });
         });
@@ -687,8 +678,8 @@
 
         /* MENU START */
 
-        $(document).ready(function () {
-            $('#go-dashboard').click(function () {
+        $(document).ready(function() {
+            $('#go-dashboard').click(function() {
                 $('.right, .explore').hide('fast');
                 $('.left').show('fast');
                 $('#dashboard-main').show('fast');
@@ -696,8 +687,8 @@
             });
         });
 
-        $(document).ready(function () {
-            $('#go-explore').click(function () {
+        $(document).ready(function() {
+            $('#go-explore').click(function() {
                 $('.right, #dashboard-main').hide('fast');
                 $('.left').show('fast');
                 $('.explore').show('fast');
@@ -705,8 +696,8 @@
             });
         });
 
-        $(document).ready(function () {
-            $('#go-contact').click(function () {
+        $(document).ready(function() {
+            $('#go-contact').click(function() {
                 $('.explore, .left, #dashboard-main').hide('fast');
                 $('.right').show('fast');
                 $('.right').css('display', 'flex');
@@ -715,8 +706,8 @@
 
         /* MENU END */
 
-        $(document).ready(function () {
-            $('.chat-with').click(function () {
+        $(document).ready(function() {
+            $('.chat-with').click(function() {
                 if ($('#show-chat-window').is(':hidden')) {
                     $('#show-chat-window').css('display', 'flex');
                     $('.chat').fadeIn();
@@ -729,8 +720,8 @@
         });
 
 
-        $(document).ready(function () {
-            $('#take-me-to-chat').click(function () {
+        $(document).ready(function() {
+            $('#take-me-to-chat').click(function() {
                 $('#swipe-connected').fadeOut('fast');
                 if ($('#show-chat-window').is(':hidden')) {
                     $('#show-chat-window').css('display', 'flex');
@@ -742,15 +733,15 @@
                 }
             });
 
-            $('#back-to-swipe').click(function () {
+            $('#back-to-swipe').click(function() {
                 $('#swipe-connected').fadeOut('fast');
 
             })
         });
 
 
-        $(document).ready(function () {
-            $('#exit-chat').click(function () {
+        $(document).ready(function() {
+            $('#exit-chat').click(function() {
                 $('.overlay-bg').fadeOut('fast');
                 $('.right, .contact').css('z-index', 'auto');
             });
@@ -758,15 +749,15 @@
 
 
 
-        $(document).ready(function () {
-            $('.no-games-mobile').click(function () {
+        $(document).ready(function() {
+            $('.no-games-mobile').click(function() {
                 $(this).hide('fast');
                 $('#my-games').css('display', 'flex');
             });
         });
 
-        $(document).ready(function () {
-            $('.loggedas, #show-profile-settings-exit, #profile-menu-pic').click(function () {
+        $(document).ready(function() {
+            $('.loggedas, #show-profile-settings-exit, #profile-menu-pic').click(function() {
                 if ($('#show-profile-settings').is(':hidden')) {
                     $('#show-profile-settings').css('display', 'flex');
                 } else {
@@ -775,8 +766,8 @@
             });
         });
 
-        $(document).ready(function () {
-            $('#go-game-settings, #exit-game-settings').click(function () {
+        $(document).ready(function() {
+            $('#go-game-settings, #exit-game-settings').click(function() {
                 if ($('#show-game-settings').is(':hidden')) {
                     $('#show-game-settings').css('display', 'flex');
                 } else {
@@ -785,8 +776,8 @@
             });
         });
 
-        $(document).ready(function () {
-            $('#toggle-dashboard').click(function () {
+        $(document).ready(function() {
+            $('#toggle-dashboard').click(function() {
                 $('.dashboard').css('display', 'flex');
                 $('.no-games').hide('slow');
             });
@@ -799,7 +790,7 @@
             $('#show-notifications').css('z-index', '14');
             $('.right').css('z-index', '8');
 
-            $('#exit').click(function () {
+            $('#exit').click(function() {
                 $('.overlay-bg').fadeOut();
             })
         };
@@ -810,7 +801,7 @@
         function showChatCard() {
             $('#preview-chat-card').css('display', 'flex');
 
-            $('#preview-chat-card, hide-preview').click(function () {
+            $('#preview-chat-card, hide-preview').click(function() {
                 $('#preview-chat-card').fadeOut();
             })
         };
@@ -822,7 +813,7 @@
             $('#confirm-delete').css('display', 'flex');
 
             $('#confirm-delete').css('z-index', '23');
-            $('#confirm-delete').click(function () {
+            $('#confirm-delete').click(function() {
                 $(this).fadeOut();
             })
         };
@@ -832,7 +823,7 @@
             $('#swipe-noprofiles').css('display', 'flex');
 
             $('#swipe-noprofiles').css('z-index', '23');
-            $('#swipe-noprofiles').click(function () {
+            $('#swipe-noprofiles').click(function() {
                 $(this).fadeOut();
             })
         };
@@ -842,7 +833,7 @@
             $('#confirm-delete-contact').css('display', 'flex');
 
             $('#confirm-delete-contact').css('z-index', '23');
-            $('#confirm-delete-contact').click(function () {
+            $('#confirm-delete-contact').click(function() {
                 $(this).fadeOut();
             })
         };
@@ -852,7 +843,7 @@
             $('#report-contact').css('display', 'flex');
 
             $('#report-contact').css('z-index', '23');
-            $('#report-contact').click(function () {
+            $('#report-contact').click(function() {
                 $(this).fadeOut();
             })
         };
@@ -862,7 +853,7 @@
             $('#report-complete').css('display', 'flex');
 
             $('#report-complete').css('z-index', '23');
-            $('#report-complete').click(function () {
+            $('#report-complete').click(function() {
                 $(this).fadeOut();
             })
         };
@@ -870,8 +861,8 @@
 
 
 
-        $(document).ready(function () {
-            $('.top-mobile-search').click(function () {
+        $(document).ready(function() {
+            $('.top-mobile-search').click(function() {
                 $(this).toggleClass('mobile-search-bar');
                 $('.search-text, .mobile-search-overlay').fadeToggle('fast');
             });
@@ -881,8 +872,8 @@
 
 
 
-        $(document).ready(function () {
-            $('.voteYes').click(function () {
+        $(document).ready(function() {
+            $('.voteYes').click(function() {
                 $('#swipe-connected').css('display', 'flex');
             });
 
