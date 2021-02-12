@@ -447,14 +447,14 @@
                 <div class="top">
 
                     <div class="title-column">
-                        <!-- <div class="inline"> -->
                         <img src="images/menu/explore-top.svg" style="height: 16px" alt="">
 
                         <h2>Explore</h2>
-                        <!-- </div> -->
                         <p id="desktop-title">List of games grouped by genres, and sorted by their populatiry </p>
                         <hr class="short">
                     </div>
+                    <div style="margin: 0 16px;" class="inline explore-search-desktop"><i style="align-self: center;" class="fas fa-search"></i>
+                        <input placeholder="Search" type="text"></div>
                     <a id="fullscreen" class="button-cta">
                         <i class="fas fa-expand"></i> see explore fullsceen
                     </a>
@@ -592,21 +592,24 @@
             $('#fullscreen').click(function() {
 
                 $(this).toggleClass('button-delete');
-
                 if ($('.no-games').is(':visible')) {
                     $('.no-games').fadeOut;
                     $('#dashboard-main').show();
 
-                    $('#dashboard-main, .right').toggle('fast');
+                    $('#dashboard-main, .search-bar, .right').toggle('fast');
 
                     $(this).html(String('<i class="fas fa-compress"></i> exit fullscreen'));
                 } else {
                     if ($('.right').is(':hidden')) {
                         $(this).html(String('<i class="fas fa-expand"></i> see explore fullsceen'));
-                        $('#dashboard-main, .right').show('fast');
-                        $('#dashboard-main, .right').css('display', 'gird');
+                        $('#dashboard-main, .right, .light').show('fast');
+                        $('#dashboard-main, .right, .light').css('display', 'gird');
+                        $('.explore-search-desktop').hide();
                     } else {
-                        $('#dashboard-main, .right').hide('fast');
+                        $('#dashboard-main, .light, .right').hide('fast');
+
+
+                        $('.explore-search-desktop').css('display', 'flex');
                         $(this).html(String('<i class="fas fa-compress"></i> exit fullscreen'));
                     }
                 }
