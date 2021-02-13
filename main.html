@@ -603,10 +603,10 @@
                 } else {
                     if ($('.right').is(':hidden')) {
                         $(this).html(String('<i class="fas fa-expand"></i> see explore fullsceen'));
-                        $('#dashboard-main, .right').show('fast');
-                        $('#dashboard-main, .right').css('display', 'gird');
+                        $('#dashboard-main, .right, .light').show('fast');
+                        $('#dashboard-main, .right, .light').css('display', 'gird');
                     } else {
-                        $('#dashboard-main, .right').hide('fast');
+                        $('#dashboard-main, .right, .light').hide('fast');
                         $(this).html(String('<i class="fas fa-compress"></i> exit fullscreen'));
                     }
                 }
