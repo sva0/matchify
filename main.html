@@ -112,6 +112,7 @@
                         </li>
                     </ul>
                 </div>
+                <hr>
                 <div class="special-settings">
                     <div class="title">
                         <div class="game-chat-img" id="pokemon"></div>
@@ -248,10 +249,10 @@
             </div>
             <p>Do you want to get in touch with <b style="color: var(--black-text);">erWin</b>?</p>
 
-            <div class="inline buttons">
+            <div class="inline buttons"><a class="button" id="take-me-to-chat"><i class="fas fa-comment"></i> Yes, take me
+                to the chat</a>
                 <a class="button-secondary" id="back-to-swipe"><i class="fas fa-angle-double-left"></i> Back to swiping
-                </a><a class="button" id="take-me-to-chat"><i class="fas fa-comment"></i> Yes, take me
-                    to the chat</a>
+                </a>
             </div>
 
         </div>
@@ -455,6 +456,8 @@
                         <p id="desktop-title">List of games grouped by genres, and sorted by their populatiry </p>
                         <hr class="short">
                     </div>
+                    <div class="inline" id="explore-desktop-search"><i style="margin-right: 8px;" class="fas fa-search"></i><input type="text" placeholder="Search.."></div>
+
                     <a id="fullscreen" class="button-cta">
                         <i class="fas fa-expand"></i> see explore fullsceen
                     </a>
@@ -596,7 +599,6 @@
                 if ($('.no-games').is(':visible')) {
                     $('.no-games').fadeOut;
                     $('#dashboard-main').show();
-
                     $('#dashboard-main, .right').toggle('fast');
 
                     $(this).html(String('<i class="fas fa-compress"></i> exit fullscreen'));
@@ -604,9 +606,12 @@
                     if ($('.right').is(':hidden')) {
                         $(this).html(String('<i class="fas fa-expand"></i> see explore fullsceen'));
                         $('#dashboard-main, .right, .light').show('fast');
+                        $('#explore-desktop-search').hide('fast');
                         $('#dashboard-main, .right, .light').css('display', 'gird');
                     } else {
                         $('#dashboard-main, .right, .light').hide('fast');
+                        $('#explore-desktop-search').show('fast');
+                        $('#explore-desktop-search').css('display', 'flex');
                         $(this).html(String('<i class="fas fa-compress"></i> exit fullscreen'));
                     }
                 }

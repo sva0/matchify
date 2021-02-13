@@ -111,13 +111,19 @@
     }
     
     .login-with {
-        background: #fff;
-        color: var(--black-text);
         border: var(--border);
     }
     
-    .login-with:hover {
-        background: var(--border-color);
+    .facebook {
+        background: #4267B2;
+        color: #fff" 
+
+    }
+    
+    .facebook:hover {
+        background: #324e86;
+        color: #fff" 
+
     }
     
     .SameHeightLogin {
