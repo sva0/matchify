@@ -32,7 +32,7 @@
 
         <div class="inner-container clear-flex" id="login-info">
             <img width="60px" src="images/logo.svg" alt="">
-            <span>MEET</span>
+            <span>What is</span>
             <h1>Matchify.gg</h1>
             <img src="images/Group 1.svg" height="140px" style="justify-self: center;" alt="">
             <p>Swipe through and get connected with players that match your requirements for any game of your choice!</p>
@@ -49,13 +49,13 @@
             <span>Welcome 🙋‍♂️</span>
             <h1>Login</h1>
             <hr class="short">
-            <label class="input-title" for="Nick"><i class="fas fa-user"></i>E-Mail</label>
+            <label class="input-title" for="Nick"><i class="fas fa-user-tag"></i>E-Mail</label>
             <input type="text" placeholder="E-mail" id="lname " name="lname ">
             <label class="input-title" for="Nick"><i class="fas fa-key"></i>Password</label>
             <input type="text" placeholder="Password" id="lname " name="lname ">
             <a href="main.html" class="button"><i class="fas fa-check"></i>Login</a>
             <span>or</span>
-            <a onclick="goRegisterFinish()" style="background: #4267B2; color: #fff" class="button login-with "><i class="fab fa-facebook-f"></i>Sing in with Facebook</a>
+            <a href="register-end.html" style="background: #4267B2; color: #fff" class="button login-with "><i class="fab fa-facebook-f"></i>Sing in with Facebook</a>
 
             <a onclick="goRegisterStep1()" class="button-secondary"><i class="fas fa-user-plus"></i>Register</a>
 
@@ -118,7 +118,7 @@
         <hr>
 
         <label class="input-title" for="Nick"><i class="fas fa-user-tag"></i>Nickname</label>
-        <input type="text" placeholder="Name" id="lname " name="lname ">
+        <input type="text" placeholder="Password" id="lname " name="lname ">
         <hr>
         <div class="special-settings">
             <label class="input-title" for="Nick"><i class="fas fa-language"></i>Languages</label>
@@ -203,7 +203,6 @@
 
             $('#registerStep1').fadeOut(200);
 
-            $('#viewZero').fadeOut(200);
             $('#registerFinish').fadeIn(200);
 
         }

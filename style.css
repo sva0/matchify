@@ -18,9 +18,8 @@
     --border-color: #D9D3E6;
     --border: 1px solid var(--border-color);
     --hr: #B7B2CB;
-    /* --second-bg: #F6F4F9; pierwsze */
-    /* --second-bg: #f2edfb; drugie */
-    --second-bg: #f1edf6;
+    /* --second-bg: #F6F4F9; */
+    --second-bg: #f2edfb;
     --input-title-c: #53497B;
     --box-shadow-container: 0px 8px 16px rgba(17, 17, 17, 0.04);
 }
@@ -417,17 +416,10 @@ i.container-title-icon {
     flex-grow: 2;
 }
 
-.explore .explore-search-desktop {
-    display: none;
+.explore input {
     -webkit-box-flex-grow: 1;
     -ms-flex-grow: 1;
     flex-grow: 1;
-    width: auto;
-}
-
-.explore input {
-    flex-grow: 1;
-    margin: 0 8px;
 }
 
 #fullscreen {
@@ -700,24 +692,6 @@ iframe {
     position: relative;
     height: 230px;
     width: 340px;
-}
-
-.inactive {
-    filter: grayscale(100%);
-}
-
-.inactive .gradient::before {
-    content: url(images/inactive.svg);
-    display: block;
-    padding: 28px 24px;
-    width: 80px;
-    height: 80px;
-    place-self: center;
-    margin-top: 42px;
-    position: absolute;
-    box-sizing: border-box;
-    background: rgb(255, 255, 255);
-    border-radius: 8px;
 }
 
 .card .platform {
@@ -1012,7 +986,6 @@ ul.explorerlist li {
     letter-spacing: 0.02em;
     color: var(--black-text);
     display: flex;
-    align-items: center;
 }
 
 .input-title .counter {
