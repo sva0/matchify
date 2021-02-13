@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
                 
-                @media (max-width: 600px) {
+                @media (max-width: 590px) {
                     ul#menu {
                         display: -webkit-box;
                         display: -ms-flexbox;

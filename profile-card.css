@@ -203,7 +203,7 @@ span i {
 }
 
 .details-box p {
-    color: var(--black);
+    color: var(--black-text);
     font-weight: 600;
 }
 
