@@ -629,7 +629,7 @@
 
         $(document).ready(function() {
             $('#goswipe').click(function() {
-                $('#dashboard-main, .explore, .light').fadeOut();
+                $('#dashboard-main, .explore, .light').hide('fast');
                 $('#swiping').css('display', 'flex');
                 $('.swipe-big').fadeIn('fast');
                 $('body').toggleClass('swipe-bg');
