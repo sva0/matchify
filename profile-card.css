@@ -57,7 +57,7 @@
 #delete-contact.profile-card,
 #report-contact.profile-card {
     width: 600px;
-    gap: 32px;
+    gap: 16px;
     padding: 24px;
 }
 

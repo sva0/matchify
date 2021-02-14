@@ -22,6 +22,7 @@
         --second-bg: #f2edfb;
         --input-title-c: #53497B;
         --box-shadow-container: 0px 8px 16px rgba(17, 17, 17, 0.04);
+        --negative: #FF6051;
     }
     
     * {
@@ -205,7 +206,7 @@
     }
     
     .button-delete {
-        color: #FF6051;
+        color: var(--negative);
     }
     
     .button-delete:hover {
@@ -236,7 +237,7 @@
     
     .button-cta#delete:hover {
         background: #ff60513f;
-        color: #FF6051;
+        color: var(--negative);
     }
     
     .button-cta:hover {
@@ -1229,7 +1230,7 @@
         font-weight: 700;
         font-size: 14px;
         gap: 8px;
-        background: #FF6051;
+        background: var(--negative);
         border: none;
     }
     
@@ -1240,7 +1241,7 @@
         box-shadow: var(--box-shadow);
         max-height: fit-content;
         display: grid;
-        gap: 32px;
+        gap: 16px;
         width: 600px;
         box-sizing: border-box;
     }
@@ -1276,17 +1277,14 @@
         flex-direction: row;
         align-items: center;
     }
-    /* #confirm-delete {
-        background: #ff60517e;
-    } */
-    
-    .confirm-box .delete-game {
-        background: #ff60517e;
-    }
     
     .info-box p {
         color: var(--white);
     }
+    /*     
+    #confirm-delete .button {
+        background: var(--negative);
+    } */
     
     .info-box .button,
     #login-info .button-secondary {
@@ -1707,12 +1705,12 @@
     
     a#warning,
     #warning i {
-        color: #FF6051;
+        color: var(--negative);
     }
     
     a#warning:hover {
         /* background: #fFE8E6; */
-        background: #ff605133;
+        background: var(--negative)33;
     }
     
     .dropdown-content a:hover {
