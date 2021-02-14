@@ -88,28 +88,33 @@
         -ms-flex-align: center;
         align-items: center;
         gap: 16px;
+        justify-content: space-between;
         -webkit-box-shadow: var(--box-shadow-container);
         box-shadow: var(--box-shadow-container);
     }
     
     .search-bar h4 {
-        -webkit-box-flex-grow: 0;
-        -ms-flex-grow: 0;
-        flex-grow: 0;
+        margin-left: 16px;
     }
     
     .search-bar input {
-        -webkit-box-flex-grow: 2;
-        -ms-flex-grow: 2;
-        flex-grow: 2;
-        border: none;
-        -webkit-box-shadow: none;
+        width: 100%;
+        color: var(--paragraph-light);
+        background: var(--second-bg);
+        border-color: transparent;
         box-shadow: none;
-        color: var(--paragraph-light)
     }
     
-    .search-bar i {
-        color: var(--paragraph-light)
+    .search-bar .element {
+        flex-grow: 2;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .search-bar .button-cta {
+        color: var(--main-color);
+        background: #5d00ff29;
     }
     
     h1,
@@ -132,17 +137,17 @@
     h4 {
         color: var(--black-text);
         font-weight: 700;
-        letter-spacing: 0.02em;
+        letter-spacing: 0.5px;
     }
     
     h2 {
         font-size: 28px;
-        letter-spacing: -1px;
+        /* letter-spacing: -1px; */
     }
     
     h1 {
         font-size: 32px;
-        letter-spacing: -1px;
+        /* letter-spacing: -1px; */
     }
     
     h4 {
@@ -774,13 +779,6 @@
     #gamelist .gradient .edit-settings-out {
         display: none;
         position: absolute;
-        height: 32px;
-        width: 32px;
-        align-items: center;
-        border-radius: 8px;
-        color: var(--paragraph);
-        justify-content: center;
-        background: #fff;
     }
     
     #explore .card {
@@ -790,6 +788,10 @@
     
     #explore .gradient {
         padding: 12px;
+    }
+    
+    #explore .gradient h4 {
+        font-size: 12px;
     }
     
     .counter {
@@ -922,6 +924,8 @@
         -ms-flex-align: center;
         align-items: center;
         gap: 16px;
+        justify-content: flex-end;
+        width: min-content;
     }
     
     .loggedas img {
@@ -1281,10 +1285,6 @@
     .info-box p {
         color: var(--white);
     }
-    /*     
-    #confirm-delete .button {
-        background: var(--negative);
-    } */
     
     .info-box .button,
     #login-info .button-secondary {
@@ -1710,7 +1710,7 @@
     
     a#warning:hover {
         /* background: #fFE8E6; */
-        background: var(--negative)33;
+        background: #FF605133;
     }
     
     .dropdown-content a:hover {
