@@ -13,6 +13,7 @@
     <link rel="icon" href="images/logo.svg" type="image/x-icon" />
     <meta name="description" content="Matchify">
     <meta name="author" content="sovadzn.com">
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 
 
 </head>
@@ -22,6 +23,7 @@
 
         <div class="card" id="valorant">
             <div class="gradient">
+                <div class="edit-settings-out"><i class="fas fa-cog"></i></div>
                 <div class="counter"><i class="fas fa-users"></i> 1775</div>
                 <div class="title-column">
                     <h4>Valorant</h4>
@@ -32,6 +34,7 @@
 
         <div class="card" id="bfv">
             <div class="gradient">
+                <div class="edit-settings-out"><i class="fas fa-cog"></i></div>
                 <div class="counter"><i class="fas fa-users"></i> 53</div>
                 <div class="title-column">
                     <h4>Battlefield V</h4>
@@ -41,6 +44,7 @@
         </div>
         <div class="card" id="pokemon">
             <div class="gradient">
+                <div class="edit-settings-out"><i class="fas fa-cog"></i></div>
                 <div class="counter"><i class="fas fa-users"></i> 328</div>
                 <div class="title-column">
                     <h4>Pokemon go</h4>
@@ -50,6 +54,7 @@
         </div>
         <div class="card" id="cod">
             <div class="gradient">
+                <div class="edit-settings-out"><i class="fas fa-cog"></i></div>
                 <div class="counter"><i class="fas fa-users"></i> 123</div>
                 <div class="title-column">
                     <h4>Call of Duty Black Ops Cold War
@@ -60,6 +65,7 @@
         </div>
         <div class="card" id="csgo">
             <div class="gradient">
+                <div class="edit-settings-out"><i class="fas fa-cog"></i></div>
                 <div class="counter"><i class="fas fa-users"></i> 802</div>
                 <div class="title-column">
                     <h4>Counter-Strike: Global Offensive</h4>
@@ -70,6 +76,7 @@
 
         <div class="card" id="lol">
             <div class="gradient">
+                <div class="edit-settings-out"><i class="fas fa-cog"></i></div>
                 <div class="counter"><i class="fas fa-users"></i> 64</div>
                 <div class="title-column">
                     <h4>League of Legends</h4>
@@ -79,4 +86,18 @@
         </div>
 
     </div>
+
+    <script>
+        $(document).ready(function() {
+            $('.gradient').mouseover(function() {
+                $(this).find('.edit-settings-out').fadeIn('fast');
+                $(this).find('.edit-settings-out').css('display', 'flex');
+            });
+
+            $('.gradient').mouseleave(function() {
+                $(this).find('.edit-settings-out').fadeOut('fast');
+            });
+
+        });
+    </script>
 </body>
