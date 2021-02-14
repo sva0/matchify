@@ -52,7 +52,8 @@
         background: var(--black);
     }
     
-    #login .inner-container {
+    #login-info,
+    #login-inputs {
         grid-template-rows: auto;
         height: auto;
     }
@@ -139,4 +140,13 @@
     #registerFinish {
         position: absolute;
         height: auto;
+    }
+    
+    #registerFinish {
+        height: 90%;
+    }
+    
+    #registerFinish iframe {
+        width: 100%;
+        margin-bottom: 16px;
     }

@@ -1374,7 +1374,8 @@
     }
     
     #profile-settings,
-    #contacts {
+    #contacts,
+    #register2 {
         display: grid;
         grid-template-columns: auto;
         gap: 24px;
