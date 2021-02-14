@@ -273,6 +273,7 @@ span i {
     font-size: 24px;
     color: #fff;
     transition: .2s;
+    cursor: pointer;
 }
 
 .voteYes {
