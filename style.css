@@ -184,6 +184,12 @@
         text-transform: capitalize;
     }
     
+    .button:hover,
+    .button-secondary:hover,
+    .button-cta:hover {
+        transform: translateY(1px);
+    }
+    
     #settings-button-container {
         margin: -24px;
         padding: 24px;
