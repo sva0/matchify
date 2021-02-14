@@ -121,7 +121,7 @@
 
 .exit-chat-card {
     position: absolute;
-    background: #070414b8;
+    background: #0f07338f;
     color: #fff;
     display: flex;
     height: 42px;
@@ -131,6 +131,7 @@
     border-radius: 8px;
     /* padding: 16px; */
     z-index: 50;
+    cursor: pointer;
 }
 
 .exit-chat-card i {
