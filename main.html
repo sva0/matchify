@@ -489,9 +489,9 @@
                     </div>
                 </div>
                 <div class="swiping-outer-card">
-                    <div class="profile-card">
-                        <img id="profile-pic" src="images/swipe-card-img.png" alt="">
-                        <h4 id="name">sva<img class="lg-img" src="images/pl.svg" alt=""></h4>
+                    <div id="swipe-first-card" onclick="showSecondCard()" class="profile-card">
+                        <img id="profile-pic" src="images/profiles/Rectangle 4.png" alt="">
+                        <h4 id="name">krzesuaw<img class="lg-img" src="images/pl.svg" alt=""></h4>
 
                         <hr class="short">
                         <ul class="details-row">
@@ -512,7 +512,34 @@
 
                         <div class="details-box">
                             <span><i class="fas fa-quote-right"></i> profile description</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <p>Lookin for someone to go bot lane with 😉</p>
+                        </div>
+                    </div>
+
+                    <div id="swipe-second-card" class="profile-card">
+                        <img id="profile-pic" src="images/profiles/Rectangle 10.png" alt="">
+                        <h4 id="name">sva<img class="lg-img" src="images/pl.svg" alt=""></h4>
+
+                        <hr class="short">
+                        <ul class="details-row">
+                            <li>
+                                <span>communicator(s)</span>
+                                <h4><i class="fas fa-microphone-slash"></i></h4>
+                            </li>
+                            <li>
+                                <span>platforms(s)</span>
+                                <h4><i class="fab fa-xbox"></i></h4>
+                            </li>
+                            <li>
+                                <span>age</span>
+                                <h4>25</h4>
+                            </li>
+
+                        </ul>
+
+                        <div class="details-box">
+                            <span><i class="fas fa-quote-right"></i> profile description</span>
+                            <p>Swipe right if u main Yasuo 💪🏼💪🏼💪🏼</p>
                         </div>
                     </div>
 
@@ -888,6 +915,13 @@
         function toggleDarkmode() {
             var element = document.body;
             element.classList.toggle("dark-mode");
+        }
+
+
+
+        function showSecondCard() {
+            $('#swipe-first-card').hide('fast');
+            $('#swipe-second-card').css('display', 'flex');
         }
     </script>
 

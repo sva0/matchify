@@ -167,7 +167,7 @@ span i {
 }
 
 .profile-card span {
-    color: var(--paragraph)
+    color: var(--paragraph-light)
 }
 
 .details-row {
@@ -200,6 +200,10 @@ span i {
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+.details-box i {
+    margin-right: 8px;
 }
 
 .details-box p {
@@ -315,6 +319,30 @@ span i {
     /* background: var(--second-bg); */
     color: #FF6051;
     background: #fFE8E6;
+}
+
+#swipe-second-card {
+    display: none;
+}
+
+.fa-microphone-slash {
+    color: var(--paragraph-light)
+}
+
+.fa-discord {
+    color: #7289DA;
+}
+
+.fa-skype {
+    color: #00AFF0;
+}
+
+.fa-xbox {
+    color: #107C10
+}
+
+.fa-playstation {
+    color: #003087
 }
 
 @keyframes animatedglow-yes {
