@@ -249,10 +249,11 @@
             </div>
             <p>Do you want to get in touch with <b style="color: var(--black-text);">erWin</b>?</p>
 
-            <div class="inline buttons"><a class="button" id="take-me-to-chat"><i class="fas fa-comment"></i> Yes, take me
-                to the chat</a>
+            <div class="inline buttons">
                 <a class="button-secondary" id="back-to-swipe"><i class="fas fa-angle-double-left"></i> Back to swiping
-                </a>
+            </a>
+                <a class="button" id="take-me-to-chat"><i class="fas fa-comment"></i> Yes, take me
+                to the chat</a>
             </div>
 
         </div>
@@ -262,7 +263,7 @@
     <div id="swipe-noprofiles" class="overlay-bg">
         <div class="confirm-box profile-card" id="delete-contact" style="height: fit-content;">
             <div class="exit-chat-card"><i class="fas fa-times"></i></div>
-            <h2 style="margin-top: 180px;">No profiles more :(</h2>
+            <h2 style="margin-top: 180px;">No more results :(</h2>
             <hr class="short">
 
             <p>Do you want to get notified about new people at this game, or your new matches?
@@ -336,7 +337,7 @@
             </ul>
 
 
-            <div class="inline buttons"><a class="button-secondary"><i class="fas fa-trash-alt"></i> Yes, delete</a><a class="button"><i class="fas fa-times"></i> No, leave it for now</a></div>
+            <div class="inline buttons"><a class="button-secondary"><i class="fas fa-times"></i> No, leave it for now</a><a class="button"><i class="fas fa-trash-alt"></i> Yes, delete</a></div>
         </div>
 
     </div>
@@ -350,15 +351,15 @@
             <h4>Do you really want to disconnect?</h4>
             <p>Are you sure that you don't want to have</p>
             <div class="inline">
-                <img src="images/profiles/Rectangle 15.png" height="48px" style="margin-left: 16px;" alt="">
+                <img src="images/profiles/Rectangle 15.png" height="48px" style="border-radius: 8px; margin-left: 16px;" alt="">
                 <div class="title-column">
                     <h4>sva-iwnl-</h4>
-                    <span>@Valorant</span>
+                    <span>Valorant</span>
                 </div>
             </div>
             <p>in your contacts no more?</p>
 
-            <div class="inline buttons"><a class="button-secondary"><i class="fas fa-trash-alt"></i> Yes, delete</a><a class="button"><i class="fas fa-times"></i> No, leave it for now</a></div>
+            <div class="inline buttons"><a class="button-secondary"><i class="fas fa-times"></i> No, leave it for now</a><a class="button"><i class="fas fa-trash-alt"></i> Yes, delete</a></div>
 
         </div>
 
@@ -381,9 +382,9 @@
             </div>
             <textarea type="text" id="lname" placeholder="Describe it more..." name="lname"></textarea>
 
-            <div class="inline buttons"><a onclick="showReportSuccess()" class="button"><i
+            <div class="inline buttons"><a class="button-secondary"><i class="fas fa-times"></i> Cancel</a><a onclick="showReportSuccess()" class="button"><i
                         class="fas fa-paper-plane"></i> Send
-                    the report</a><a class="button-secondary"><i class="fas fa-times"></i> Cancel</a></div>
+                    the report</a></div>
 
         </div>
 
@@ -397,7 +398,7 @@
                     <div class="hide-info"><i class="fas fa-times"></i></div>
                 </div>
                 <p>Thank you!</p>
-                <p>It will up to few days to review it.</p>
+                <p>It will take up to few days to review it.</p>
             </div>
             <a class="button"><i class="fas fa-arrow-left"></i> Go back</a>
         </div>
@@ -831,6 +832,7 @@
 
 
         function showChatCard() {
+            $('#preview-chat-card').fadeIn();
             $('#preview-chat-card').css('display', 'flex');
 
             $('#preview-chat-card, hide-preview').click(function() {
