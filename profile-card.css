@@ -121,11 +121,11 @@
 
 .exit-chat-card {
     position: absolute;
-    background: #12073a38;
+    background: #070414b8;
     color: #fff;
     display: flex;
-    width: 32px;
-    height: 32px;
+    height: 42px;
+    width: 42px;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
