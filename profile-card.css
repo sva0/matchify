@@ -318,9 +318,7 @@ span i {
 #report-contact .button-secondary:hover,
 #confirm-delete .button-secondary:hover,
 #confirm-delete-contact .button-secondary:hover {
-    /* background: var(--second-bg); */
-    color: #FF6051;
-    background: #fFE8E6;
+    background: var(--second-bg);
 }
 
 #swipe-second-card {

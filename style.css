@@ -186,7 +186,8 @@
     
     .button:hover,
     .button-secondary:hover,
-    .button-cta:hover {
+    .button-cta:hover,
+    .button-delete:hover {
         transform: translateY(1px);
     }
     
@@ -791,7 +792,7 @@
         position: absolute;
         background: #fff;
     }
-
+    
     #gamelist .gradient .edit-settings-out:hover {
         background: var(--second-bg);
     }
