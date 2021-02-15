@@ -255,3 +255,31 @@ li:hover {
     gap: 16px;
     justify-self: center;
 }
+
+.fa-microphone-slash {
+    color: var(--paragraph-light)
+}
+
+.fa-discord {
+    color: #7289DA;
+}
+
+.fa-skype {
+    color: #00AFF0;
+}
+
+.fa-xbox {
+    color: #107C10
+}
+
+.fa-playstation {
+    color: #1e58c4;
+}
+
+.fa-facebook-messenger {
+    color: #0084ff;
+}
+
+.fa-desktop {
+    color: var(--main-color)
+}

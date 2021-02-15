@@ -552,7 +552,11 @@
     }
     
     .gradient span {
-        color: var(--hr)
+        color: var(--paragraph-light);
+        /* background: #fff;
+        width: fit-content;
+        padding: 4px;
+        border-radius: 8px; */
     }
     
     .no-games .top {
@@ -785,6 +789,11 @@
     #gamelist .gradient .edit-settings-out {
         display: none;
         position: absolute;
+        background: #fff;
+    }
+
+    #gamelist .gradient .edit-settings-out:hover {
+        background: var(--second-bg);
     }
     
     #explore .card {
@@ -1704,6 +1713,7 @@
         border-radius: 8px;
         font-size: 14px;
         text-align: left;
+        cursor: pointer;
     }
     
     .dropdown-content i {

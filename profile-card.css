@@ -327,26 +327,6 @@ span i {
     display: none;
 }
 
-.fa-microphone-slash {
-    color: var(--paragraph-light)
-}
-
-.fa-discord {
-    color: #7289DA;
-}
-
-.fa-skype {
-    color: #00AFF0;
-}
-
-.fa-xbox {
-    color: #107C10
-}
-
-.fa-playstation {
-    color: #003087
-}
-
 @keyframes animatedglow-yes {
     0% {
         box-shadow: 0 0 4px #09ECA7;

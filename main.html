@@ -635,7 +635,7 @@
                         $('#explore-desktop-search').fadeOut();
                         $('#dashboard-main, .right, .light').css('display', 'gird');
                     } else {
-                        $('#dashboard-main, .right, .light').hide();
+                        $('#dashboard-main, .right, .light').hide('fast');
                         $('#explore-desktop-search').fadeIn('fast');
                         $('#explore-desktop-search').css('display', 'flex');
                         $(this).html(String('<i class="fas fa-compress"></i> exit fullscreen'));
