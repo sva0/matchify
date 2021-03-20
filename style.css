@@ -19,7 +19,8 @@
         --border: 1px solid var(--border-color);
         --hr: #B7B2CB;
         --white: #ffffff;
-        --second-bg: #f2edfb;
+        /* --second-bg: #f2edfb; */
+        --second-bg: #F5F3F9;
         --input-title-c: #53497B;
         --box-shadow-container: 0px 8px 16px rgba(17, 17, 17, 0.04);
         --negative: #FF6051;
@@ -157,12 +158,14 @@
     .button,
     .button-secondary,
     .button-delete,
-    .button-cta {
+    .button-cta,
+    .button-th {
         border-radius: var(--rad);
         height: -webkit-fit-content;
         height: -moz-fit-content;
         height: fit-content;
         text-decoration: none;
+        font-family: Montserrat;
         -webkit-transition: .2s;
         -o-transition: .2s;
         transition: .2s;
@@ -180,14 +183,15 @@
         cursor: pointer;
         font-weight: 700;
         border: 2px solid transparent;
-        font-size: 14px;
+        font-size: 16px;
         text-transform: capitalize;
     }
     
     .button:hover,
     .button-secondary:hover,
     .button-cta:hover,
-    .button-delete:hover {
+    .button-delete:hover,
+    .button-th:hover {
         transform: translateY(1px);
     }
     
@@ -272,13 +276,13 @@
     }
     
     .button-cta i {
-        font-size: 14px;
+        font-size: 16px;
     }
     
     p {
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 150%;
         color: var(--paragraph);
         letter-spacing: 0.02em;
@@ -1022,7 +1026,7 @@
     
     .input-title {
         font-weight: 600;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 20px;
         margin-bottom: -12px;
         letter-spacing: 0.02em;
@@ -1090,7 +1094,7 @@
         -webkit-transition: .2s;
         -o-transition: .2s;
         transition: .2s;
-        font-size: 14px;
+        font-size: 16px;
         box-sizing: border-box;
         line-height: 14px;
     }
@@ -1244,7 +1248,7 @@
         justify-content: center;
         padding: 16px;
         font-weight: 700;
-        font-size: 14px;
+        font-size: 16px;
         gap: 8px;
         background: var(--negative);
         border: none;
@@ -1712,7 +1716,7 @@
         display: block;
         color: var(--paragraph);
         border-radius: 8px;
-        font-size: 14px;
+        font-size: 16px;
         text-align: left;
         cursor: pointer;
     }

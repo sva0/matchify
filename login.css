@@ -115,17 +115,30 @@
         border: var(--border);
     }
     
-    .facebook {
-        background: #4267B2;
-        color: #fff" 
-
+    .buttons-login-with {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        border: 0;
+        gap: 16px;
+    }
+    
+    .button-th {
+        display: flex;
+        padding: 16px;
+        border-radius: 8px;
+        justify-content: center;
+        border: var(--border)
+    }
+    /* .facebook {
+        background: #fff;
+        border: var(--border);
+        color: var(--black)
     }
     
     .facebook:hover {
-        background: #324e86;
-        color: #fff" 
-
-    }
+        border: 1px solid #1C182C;
+        background: #fff;
+    } */
     
     .SameHeightLogin {
         height: fit-content;

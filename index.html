@@ -34,7 +34,7 @@
             <img width="60px" src="images/logo.svg" alt="">
             <span>MEET</span>
             <h1>Matchify.gg</h1>
-            <img src="images/Group 2.svg" height="140px" style="justify-self: center;" alt="">
+            <img src="images/Group 1.svg" height="140px" style="justify-self: center;" alt="">
             <p>Swipe through and get connected with players that match your requirements for any game of your choice!</p>
 
             <a onclick="goRegisterStep1()" class="button"><i class="fas fa-user-plus"></i>Create free account</a>
@@ -47,7 +47,7 @@
 
 
         <div class="inner-container clear-flex" id="login-inputs">
-            <span>Welcome 🙋‍♂️</span>
+            <span>Welcome</span>
             <h1>Login</h1>
             <hr class="short">
             <label class="input-title" for="Nick"><i class="fas fa-user-tag"></i>E-Mail</label>
@@ -55,10 +55,14 @@
             <label class="input-title" for="Nick"><i class="fas fa-key"></i>Password</label>
             <input type="text" placeholder="Password" id="lname " name="lname ">
             <a href="main.html" class="button"><i class="fas fa-check"></i>Login</a>
-            <hr class="short">
-            <a onclick="goRegisterFinish()" class="button login-with facebook"><i class="fab fa-facebook-f"></i>Sing in with Facebook</a>
-
             <a onclick="goRegisterStep1()" class="button-secondary"><i class="fas fa-user-plus"></i>Register</a>
+            <hr class="short">
+            <span>Or get in using:</span>
+            <div class="buttons-login-with">
+                <a onclick="goRegisterFinish()" class="button-th"><i class="fab fa-facebook-f"></i></a>
+                <a onclick="goRegisterFinish()" class="button-th"><i class="fab fa-facebook-f"></i></a>
+                <a onclick="goRegisterFinish()" class="button-th"><i class="fab fa-facebook-f"></i></a>
+            </div>
 
         </div>
 
