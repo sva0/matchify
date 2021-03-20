@@ -206,6 +206,20 @@
         text-transform: capitalize;
     }
     
+    .button-th:hover {
+        border: 1px solid var(--main-color);
+        background: #5d00ff29;
+        color: vaR(--main-color)
+    }
+    
+    .button-th:hover i {
+        color: var(--main-color)
+    }
+    
+    .button-th i {
+        color: var(--paragraph)
+    }
+    
     .button:hover,
     .button-secondary:hover,
     .button-cta:hover,
